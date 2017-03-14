@@ -1,0 +1,776 @@
+@import 'variables'
+
+//generic styles
+
+html
+	:font-size 10px
+	:box-sizing border-box
+*, *:before, *:after
+	:box-sizing inherit	
+body
+	:font-family $body-font	
+	:font-size 1.5rem
+	:line-height 2.6rem
+	:margin 0
+	:letter-spacing 1.5px
+a 
+	:text-decoration none
+img 
+	:width 100%
+//grid columns
+$grid-base: 40
+
+=make-column($columns, $grid: $grid-base)
+	:box-sizing border-box
+	:width percentage($columns / $grid)
+
+=make-gutter($left-gutter: 0, $right-gutter: 0, $grid: $grid-base)
+	:margin-left percentage($left-gutter / $grid)
+	:margin-right percentage($right-gutter / $grid)
+
+//adaptive screen sizes
+%make-adaptive
+	@media screen and (min-width: 1170px)
+		// XL
+		:width 1146px
+		:margin
+			:left 12px
+			:right 12px
+	@media screen and (min-width: 960px) and (max-width: 1169px)
+		// LG
+		:width 936px
+		:margin
+			:left 12px
+			:right 12px
+	@media screen and (min-width: 768px) and (max-width: 959px)
+		// MD
+		:width 744px
+		:margin
+			:left 12px
+			:right 12px
+	@media screen and (min-width: 500px) and (max-width: 767px)
+		// SM
+		:width 480px
+		:margin
+			:left 12px
+			:right 12px
+	@media screen and (max-width: 499px)
+		// XS
+		:width auto
+		:margin-left 8px
+		:margin-right 8px
+
+
+=display-for($size: false)
+	@each $screen in $size
+		@if $screen == xl
+			@media screen and (min-width: 1170px)
+				@content
+		@else if $screen == lg
+			@media screen and (min-width: 960px) and (max-width: 1169px)
+				@content
+		@if $screen == md
+			@media screen and (min-width: 768px) and (max-width: 959px)
+				@content
+		@else if $screen == sm
+			@media screen and (min-width: 500px) and (max-width: 767px)
+				@content
+		@else if $screen == xs
+			@media screen and (max-width: 499px)
+				@content
+
+.wrapper
+	@extend %make-adaptive
+	:box-sizing border-box
+	:position relative
+	+display-for(xl lg md sm)
+		:margin 0 auto
+	+display-for(xs)
+		:margin 0
+		:padding 0 12px
+	&--flex
+		:display flex
+		:align-items center
+		:justify-content space-between
+		:flex-flow row wrap
+.wrapper, .wrapper--flex
+	.col
+		&--two
+			+make-column(20)
+			+display-for(sm xs)
+				+make-column(40)	
+		&--four
+			+make-column(10)
+			+display-for(sm)
+				+make-column(20)
+			+display-for(xs)
+				+make-column(40)
+		&--five
+			+make-column(8)
+			+display-for(md)
+				+make-column(13.33)
+			+display-for(sm)
+				+make-column(13.33)
+			+display-for(xs)
+				+make-column(20)				
+
+section
+	:padding 140px 0	
+	+display-for(sm xs)
+		:padding 80px 0				
+
+//fonts stuff			
+h2, h3, h4 
+	:font-family $title-font
+	:font-weight normal
+h2 
+	:font-size 4rem	
+	:line-height 4.4rem	
+	+display-for(xs)
+		:font-size 3.2rem
+		:line-height 3.8rem
+h3 
+	:font-size 2.4rem	
+	:line-height 2.8rem
+	+display-for(xs)
+		:font-size 2.2rem
+		:line-height 2.4rem
+h4 
+	:font-size 1.8rem	
+	:line-height 2rem
+a 
+	:transition 0.3s all ease	
+
+.text-primary, .text-secondary 
+	:letter-spacing 0.4
+	:line-height 3.2rem
+	:font-size 1.85rem
+	:text-align center
+	:max-width 650px
+	:margin 0 auto
+.text-primary
+	:font-family $hl-font
+	:font-style italic
+h2.hl 
+	:color $gold
+	:font-weight bold	
+		
+.button
+	:border none
+	:padding 10px 12px 8px 12px
+	:transition 0.3s all ease
+	:cursor pointer
+	:font-family $title-font
+	:font-size 1.6rem
+	:letter-spacing 1.2px
+.button--primary
+	:border 2px solid $gold
+	:background $gold
+	:color white
+.button--primary:hover
+	:background white
+	:color $gold			
+// NAV
+.logo-main
+	:width 240px
+nav 
+	:background white
+	:padding 12px 0
+	:position fixed
+	:box-shadow 3px 2px 11px 0px rgba(0,0,0,0.3)
+	:top 0
+	:width 100%
+	:z-index 10
+	.title 
+		:position absolute
+		:top 50%
+		:transform translateY(-50%)
+		:height 40px
+		:background-color $red
+		:width 30%
+		// :float left
+		// :width 330px
+		&:after 
+			:content ''
+			:position absolute
+			:right 0
+			:border-left 40px solid $red
+			:border-bottom 40px solid white
+	.wrapper
+		+display-for(md sm xs)
+			:margin 0
+			:padding 0 20px 
+			:width 100%	
+	.menu--main
+		+make-column(24)
+		+display-for(sm xs)
+			+make-column(40)
+		+display-for(md sm xs)
+			:display none	
+	a.logo 
+		+make-column(16)
+		+display-for(sm xs)
+			+make-column(40)
+		p 
+			:color white
+			:font-weight bold
+			:font-size 2rem
+			:text-transform uppercase
+				
+
+	ul 
+		:list-style none
+		:padding 0
+		:margin 0
+		:justify-content flex-end
+		+display-for(md sm xs)
+			:position absolute
+			:background $blue
+			:top 55px
+			:margin 0
+			:padding 40px 0 20px
+			:width 100% !important
+			:left 0
+			:z-index 1
+		li 
+			:font-weight bold
+			:font-size 2rem
+			:margin-left 30px	
+			+display-for(md sm xs)
+				:width 100%
+				:text-align center
+
+		a 
+			:text-decoration none
+			:color $blue
+			:font-family $title-font
+			:text-transform uppercase
+			:letter-spacing 0.8px
+			+display-for(md sm xs)
+				:padding 20px
+				:display block
+		a:hover 
+			:color $red
+			+display-for(md sm xs)
+				:background $red
+				:color white
+	.main--toggle
+		:display none
+		+display-for(md sm xs)
+			:float right 
+			:display block
+			:transition all 0.3s
+			:padding 12px 0 18px
+			&:hover 
+				&:before
+					:transform translate3d(0, -1px, 0)
+				&:after 
+					:transform translate3d(0, 1px, 0)
+			&:before, &:after
+				:content ' '
+				:width 32px
+				:height 2px
+				:background white
+				:display block
+				:margin-top 6px
+				:transition all 0.3s
+					
+			span
+				:width 32px
+				:height 2px
+				:margin-top 6px
+				:display block
+				:background white
+				:transition all 0.3s
+	.main--toggle.active
+		+display-for(md sm xs)
+			:padding 11px 0 17px
+			span 
+				:opacity 0
+				:width 28px
+				:height 4px
+				:transform translate3d(0, 0, 0) rotate(45deg)
+			&:before
+				:transform translate3d(0, 8px, 0) rotate(45deg)
+				:width 22px
+				:height 2px
+			&:after
+				:transform translate3d(0, -10px, 0) rotate(-45deg)
+				:width 22px
+				:height 2px		
+
+// HEADER
+header 
+	// :background linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-url('video-img.png')
+	:background-size cover
+	:color white
+	:height calc(100vh - 90px)
+	:position relative
+	:margin-top 90px
+	h2 
+		:text-align center
+		:margin 0 0 12px
+		:font-size 60px
+		:font-weight bold
+		:line-height 1.3
+		:text-transform uppercase
+		+display-for(xs)
+			:margin-right 10px
+	.background-image
+		:height 100%
+		:background-size cover
+	.lower-nav 
+		:color white
+		:background-color $blue
+		&--content
+			:max-width 50%
+			:margin auto auto
+			:text-transform uppercase
+			:position relative
+			.red-half-circle
+				:background-color $red
+				:min-height 80px
+				:width 160px
+				:border-top none
+				:border-radius 300px 300px 0 0
+				:position absolute
+				:bottom 0
+				:left 50%
+				:transform translateX(-50%)
+				:box-shadow 0px -3px 11px 1px rgba(0,0,0,0.4)
+				p 
+					:width 50%
+					:text-align center
+					:margin 0 auto
+					:margin-top 40px
+					:line-height 1.3
+	.arrow
+		:display inline-block
+		:width 100%
+		:text-align center
+		:margin-bottom 80px
+		img 
+			:width 50px
+				
+	.header--wrapper
+		:height calc(100% - 56px)
+		:max-width 60%
+		.blue-half-circle
+			:background-color $blue
+			:min-height 80px
+			:width 160px
+			:border-radius 0 0 300px 300px
+			:position absolute
+			:top 0
+			:left 50%
+			:transform translateX(-50%)
+			:text-align center
+			:box-shadow 0px 3px 11px 1px rgba(0,0,0,0.4)
+			p 
+				:width 50%
+				:margin 0 auto
+				:margin-top 10px
+				:color white
+	.wrapper 
+		// :height 90vh
+		// :position relative
+		+display-for(xs)
+			// :height 80vh
+		.header--text
+			:position absolute
+			:bottom 80px
+			:right 0
+			+display-for(xs)
+				:width 100%
+				:text-align center
+
+//ABOUT
+.about 
+	:background-color white
+	.text-primary
+		:margin-bottom 140px
+		+display-for(xs)
+			:margin-bottom 80px
+	.col--two
+		&:nth-of-type(2n + 2)
+			:padding 0 30px
+			+display-for(xs)
+				:padding 0
+		&:nth-of-type(2n + 1)
+			+display-for(sm xs)
+				:height 200px 
+				:overflow hidden
+				:margin-bottom 22px	
+	.wrapper--flex	
+		:margin-bottom 60px
+		&:nth-of-type(2)
+			:flex-direction row-reverse
+			.col--two
+				&:nth-of-type(2n + 2)	
+					:padding-left 0
+					+display-for(sm)
+						:padding-left 20px
+					+display-for(xs)
+						:padding 0		
+
+section#donovan
+	:padding 0
+	:color white
+	:position relative
+	.background-image 
+		:height 80vh
+		:background-size cover
+	h2 
+		:margin 0
+	.top	
+		:position absolute
+		:top 100px
+		:left 50%
+		:transform translateX(-50%)
+		:width 60%
+	.bottom
+		:position absolute
+		:bottom 100px
+		:left 50%
+		:transform translateX(-50%)
+		:width 60%
+
+section#athlete-story
+	.col--two
+		:display flex
+		p 
+			:width 60%
+			:margin auto auto
+			:color white
+		&:nth-of-type(1n+1)
+			:background-color $red
+		&:nth-of-type(2n+1)
+			:background-color $blue
+//PEOPLE
+// .people
+// 	:background $lightgrey
+// 	img 
+// 		:border-radius 50%
+// 		:width 70%
+// 		:display block
+// 		:margin 0 auto
+
+// 	.wrapper--flex
+// 		&:nth-of-type(1)
+// 			:margin-bottom 60px
+// 			.col--img
+// 				:padding-left 80px
+// 		&:nth-of-type(2)
+// 			:flex-direction row-reverse	
+// 			.col--img 
+// 				:padding-right 80px	
+// 		.col--img 
+// 			+display-for(sm xs)
+// 				:padding 0 !important
+// 				:margin 20px		
+
+// SERVICES
+// .services 
+// 	:background-color white
+// 	h2 
+// 		:text-align center
+// 	h3 
+// 		:margin 0 0 18px 0
+// 		+display-for(xs)
+// 			:text-align center	
+// 	.text-secondary
+// 		:margin-bottom 80px	
+// 	i 
+// 		:height 60px
+// 		:width 60px
+// 		:border 2px solid $gold
+// 		:border-radius 50%
+// 		:text-align center
+// 		:line-height 60px
+// 		:font-size 20px	
+// 		:transition 0.3s all ease
+// 		:cursor pointer
+// 		+display-for(xs)
+// 			:margin 0 auto 20px
+// 	// i:hover
+// 	// 	:background $gold	
+// 	.wrapper--flex
+// 		:width 80%
+// 		:margin 0 auto 48px
+// 		p 
+// 			:color $darkgrey	
+// 		div 
+// 			:width calc(100% - 100px)
+// 			+display-for(xs)
+// 				:width 100%
+//SOCIAL
+section.social 
+	:padding 0
+	:background-color #0B0B0B
+.social-element
+	:position relative
+	:justify-content center
+	&:nth-of-type(2n+5)
+		:background-color $lightgold
+	&:nth-of-type(8n+1)
+		:background-color $gold
+	&:nth-of-type(3)
+		:background-color $darkgold
+	&:nth-of-type(6)
+		:order 7
+	&:nth-of-type(7)
+		:order 6
+	&:nth-of-type(8)
+		:order 9
+	&:nth-of-type(9)
+		:order 8
+	&:after
+		:content ""
+		:display block
+		:padding-bottom 100%
+	+display-for(md sm)
+		&:nth-of-type(1)
+			:order 1
+		&:nth-of-type(2)
+			:order 2
+		&:nth-of-type(3)
+			:order 3
+		&:nth-of-type(4)
+			:order 4
+		&:nth-of-type(5)
+			:order 5
+		&:nth-of-type(6)
+			:order 6
+		&:nth-of-type(7)
+			:order 7
+		&:nth-of-type(8)
+			:order 8
+		&:nth-of-type(9)
+			:order 9	
+		&:nth-of-type(10)
+			:display none
+
+	+display-for(xs)
+		&:nth-of-type(1)
+			:order 1
+		&:nth-of-type(2)
+			:order 2
+		&:nth-of-type(3)
+			:order 4
+		&:nth-of-type(4)
+			:order 3
+		&:nth-of-type(5)
+			:order 5
+		&:nth-of-type(6)
+			:order 6
+		&:nth-of-type(7)
+			:order 8
+		&:nth-of-type(8)
+			:order 7
+		&:nth-of-type(9)
+			:order 9
+		&:nth-of-type(10)
+			:order 10		
+.social-element.col--four
+	+display-for(xs)
+		:width 50% !important			
+.instagram
+	:position absolute
+	:height 100%
+	:width 100%
+	:background-size contain
+	:background-repeat no-repeat
+	:background-position center
+.wrapper--flex.tweet-flex
+	:flex-wrap wrap
+.tweet
+	:display flex
+	:position absolute
+	:padding 0 20px
+	:height 80%
+	// :overflow scroll
+	:margin auto
+	:top 0 
+	:left 0 
+	:bottom 0 
+	:right 0
+	:color white
+	:font-size 16px
+	:font-family 'Georgia'
+	p 
+		:line-height 28px
+	+display-for(lg md)
+		:padding 0px 15px
+		:height 80%
+		p 
+			:line-height 18px
+			:margin 0
+	+display-for(sm xs)
+		:padding 0 15px
+		:height 90%
+	a 
+		:color white
+		:font-weight bold
+		:word-break break-all
+		:display inline-block
+
+	p 
+		:align-self center
+		:font-size 18px
+		+display-for(lg)
+			:font-size 16px
+			:line-height 1.2
+		+display-for(md)
+			:font-size 14px
+			:line-height 1.2
+		+display-for(sm)
+			:font-size 16px
+			:line-height 1.8			
+		+display-for(xs)
+			:font-size 13px
+			:line-height 1.3
+		
+.square
+	:position relative
+	// :width 20%
+	:border 2px solid black
+.square:after
+	:content ""
+	:display block
+	:padding-bottom 100%
+
+//FACEBOOK
+.facebook
+	:background $lightgrey
+	.wrapper--flex
+		:align-items flex-start
+	.col--two
+		:width 46%
+		+display-for(sm xs)
+			:width 100% 
+	img
+		:max-width 100% 
+		:height 300px
+		:object-fit cover
+		+display-for(md sm xs)
+			:height 200px		
+	a
+		:color #111
+		&:hover
+			:color $red
+	p 
+		:margin-bottom 0
+		:word-break break-word
+
+//CONTACT
+.contact 
+	:background-color white
+	:background $gold
+	:padding 0
+	.wrapper--flex
+		:align-items stretch
+	.contact--info 
+		:text-align center
+		:padding 80px 0
+		p
+			:margin 0 0 8px 0
+		div:first-of-type
+			:margin-bottom 30px
+	.contact--map
+		:background image-url('map-with-marker.png') center
+		:background-size cover	
+		:position relative
+		+display-for(sm xs)
+			:height 400px
+		a 
+			:position absolute
+			:top 0 
+			:left 0
+			:height 100%
+			:width 100%
+
+.request
+	:background-color white			
+	form, h2
+		:width 80%
+		:margin 0 auto
+	h2 
+		:margin-bottom 3.2rem	
+	form
+		input:-webkit-autofill
+			:-webkit-box-shadow 0 0 0px 1000px #f5e7bb inset
+		label	
+			:font-size 13px
+			:text-transform uppercase
+			:transition 0.3s all ease
+		textarea
+			:border 2px solid black
+			:width 100%
+		input[type=submit]
+			:float right
+		.comments-label 
+			:padding-left 6px
+			+display-for(sm xs)	
+				:padding-left 0	
+		.col--two	
+			:position relative
+			label
+				:position absolute
+				:top 0
+				:left 6px
+				+display-for(sm xs)
+					:left 0
+			input
+				:width 100%
+				:border none
+				:border-bottom 2px solid black
+				:padding 12px
+				:margin-bottom 20px
+		.col--two:nth-of-type(2n + 1)
+			:padding-right 10px	
+		.col--two:nth-of-type(2n + 2)		
+			:padding-left 10px
+			label
+				:left 16px
+				+display-for(sm xs)
+					:left 0
+		.col--two:nth-of-type(2n + 2), .col--two:nth-of-type(2n + 1)
+			+display-for(sm xs)
+				:padding 0
+//FOOTER
+footer
+	:background $purple
+	:color white
+	:padding 18px 0	
+	.logo-footer
+		:width 80px
+		:margin-right 30px
+	h3 
+		:font-size 2rem
+		:margin 0 0 12px
+	p 
+		:font-family $hl-font
+		:font-size 1.2rem
+		:line-height 1.8rem		
+	div 
+		:width calc(80% - 110px)
+		+display-for(sm xs)
+			:width calc(100% - 110px)				
+	div.social-links
+		:width 20%	
+		:text-align right
+		+display-for(sm xs)
+			:width calc(100% - 110px)
+			:margin-left 110px
+			:text-align left
+		a 
+			:color white
+			:font-size 2rem
+			:margin-right 16px
+		a:hover 
+			:color $red	
+		a:last-of-type
+			:margin-right 0	
+			
+
+
