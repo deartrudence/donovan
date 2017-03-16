@@ -17,6 +17,7 @@ a
 	:text-decoration none
 img 
 	:width 100%
+	:height 100%
 //grid columns
 $grid-base: 40
 
@@ -181,6 +182,36 @@ nav
 	:top 0
 	:width 100%
 	:z-index 10
+	.fa-facebook, .fa-instagram
+		:width 32px
+		:height 32px
+		:background-color $blue
+		:color white
+		:font-size 16px
+		:line-height 32px
+		:border-radius 50%
+		:border 2px solid $blue
+		:text-align center
+		:transition 0.3s
+		&:hover
+			:color $blue
+			:background-color white
+	.blue-half-circle
+		:background-color $blue
+		:min-height 80px
+		:width 160px
+		:border-radius 0 0 300px 300px
+		:position absolute
+		:top 90px
+		:left 50%
+		:transform translateX(-50%)
+		:text-align center
+		:box-shadow 0px 3px 11px 1px rgba(0,0,0,0.4)
+		p 
+			:width 50%
+			:margin 0 auto
+			:margin-top 10px
+			:color white
 	.title 
 		:position absolute
 		:top 50%
@@ -217,7 +248,6 @@ nav
 			:font-size 2rem
 			:text-transform uppercase
 				
-
 	ul 
 		:list-style none
 		:padding 0
@@ -270,7 +300,7 @@ nav
 				:content ' '
 				:width 32px
 				:height 2px
-				:background white
+				:background $blue
 				:display block
 				:margin-top 6px
 				:transition all 0.3s
@@ -307,6 +337,7 @@ header
 	:height calc(100vh - 90px)
 	:position relative
 	:margin-top 90px
+
 	h2 
 		:text-align center
 		:margin 0 0 12px
@@ -355,22 +386,7 @@ header
 	.header--wrapper
 		:height calc(100% - 56px)
 		:max-width 60%
-		.blue-half-circle
-			:background-color $blue
-			:min-height 80px
-			:width 160px
-			:border-radius 0 0 300px 300px
-			:position absolute
-			:top 0
-			:left 50%
-			:transform translateX(-50%)
-			:text-align center
-			:box-shadow 0px 3px 11px 1px rgba(0,0,0,0.4)
-			p 
-				:width 50%
-				:margin 0 auto
-				:margin-top 10px
-				:color white
+		
 	.wrapper 
 		// :height 90vh
 		// :position relative
@@ -436,16 +452,48 @@ section#donovan
 		:width 60%
 
 section#athlete-story
+	.wrapper--flex
+		:align-items stretch
 	.col--two
 		:display flex
+		:position relative
 		p 
-			:width 60%
+			:width 70%
 			:margin auto auto
 			:color white
+		img 
+			:width 100%
+			:height 100%
 		&:nth-of-type(1n+1)
 			:background-color $red
 		&:nth-of-type(2n+1)
 			:background-color $blue
+
+section#foundation
+	h2 
+		:text-align center
+		:font-weight bold
+		:font-size 60px
+		:color $blue
+		:font-style italic
+		:text-transform uppercase
+	p 
+		:width 60%
+		:text-align center
+		:margin 0 auto
+		:padding-bottom 50px
+	.info 
+		:align-items flex-start
+		:background-color #ddd
+		:padding 40px
+		.col--two
+			:padding 40px
+		h4
+			:color $blue
+			:text-transform uppercase
+			:font-weight bold
+		li 
+			:list-style none
 //PEOPLE
 // .people
 // 	:background $lightgrey
@@ -510,20 +558,18 @@ section.social
 .social-element
 	:position relative
 	:justify-content center
-	&:nth-of-type(2n+5)
-		:background-color $lightgold
-	&:nth-of-type(8n+1)
-		:background-color $gold
-	&:nth-of-type(3)
-		:background-color $darkgold
-	&:nth-of-type(6)
-		:order 7
-	&:nth-of-type(7)
+	&:nth-of-type(2n+1)
+		:background-color $red
+	&:nth-of-type(4n+1)
+		:background-color $blue
+	&:nth-of-type(5)
 		:order 6
-	&:nth-of-type(8)
-		:order 9
-	&:nth-of-type(9)
-		:order 8
+	// &:nth-of-type(7)
+	// 	:order 6
+	// &:nth-of-type(8)
+	// 	:order 9
+	// &:nth-of-type(9)
+	// 	:order 8
 	&:after
 		:content ""
 		:display block
@@ -581,6 +627,25 @@ section.social
 	:background-size contain
 	:background-repeat no-repeat
 	:background-position center
+	&:hover
+		i
+			:visibility visible
+	i 
+		:position absolute
+		:top 65%
+		:left 50%
+		:transform translateX(-50%)
+		:color $blue
+		:background white
+		:padding 10px
+		:border-radius 50%
+		:text-align center
+		:box-shadow 0 0 0 5px rgba(0,0,0,0.1)
+		:font-size 18px
+		:visibility hidden
+		:transition 0.3s
+		&:hover
+			:color $red
 .wrapper--flex.tweet-flex
 	:flex-wrap wrap
 .tweet
@@ -596,15 +661,37 @@ section.social
 	:right 0
 	:color white
 	:font-size 16px
-	:font-family 'Georgia'
+	:font-family $body-font
+	&:hover
+		i
+			:visibility visible
+.tweet
+	a
+		:position absolute
+		:top 70%
+		:left 50%
+		:transform translateX(-50%)
+		i 
+			:color $blue
+			:background white
+			:padding 10px
+			:border-radius 50%
+			:text-align center
+			:box-shadow 0 0 0 5px rgba(0,0,0,0.1)
+			:font-size 18px
+			:visibility hidden
+			:transition 0.3s
+			&:hover
+				:color $red
 	p 
 		:line-height 28px
+		:margin auto
 	+display-for(lg md)
 		:padding 0px 15px
 		:height 80%
 		p 
 			:line-height 18px
-			:margin 0
+			:margin auto
 	+display-for(sm xs)
 		:padding 0 15px
 		:height 90%
@@ -739,38 +826,48 @@ section.social
 				:padding 0
 //FOOTER
 footer
-	:background $purple
+	:background-image image-url('footer.png')
+	:background-size cover
 	:color white
-	:padding 18px 0	
-	.logo-footer
-		:width 80px
-		:margin-right 30px
+	:padding 150px 0
+	.col--two
+		:padding 0 70px	
 	h3 
 		:font-size 2rem
 		:margin 0 0 12px
+		:text-transform uppercase
 	p 
 		:font-family $hl-font
 		:font-size 1.2rem
-		:line-height 1.8rem		
-	div 
-		:width calc(80% - 110px)
-		+display-for(sm xs)
-			:width calc(100% - 110px)				
-	div.social-links
-		:width 20%	
-		:text-align right
-		+display-for(sm xs)
-			:width calc(100% - 110px)
-			:margin-left 110px
-			:text-align left
-		a 
-			:color white
-			:font-size 2rem
-			:margin-right 16px
-		a:hover 
-			:color $red	
-		a:last-of-type
-			:margin-right 0	
-			
+		:line-height 1.8rem
+	.address
+		margin-bottom: 20px
+		p 
+			:margin 0
+	#general-inquiry
+		input 
+			:width 100%
+			:padding 10px
+			:border none
+			:margin-bottom 20px	
+	.social-icons
+		:padding 0
+		li 
+			:list-style none	
+			:float left
+			:margin-right 30px
+			&:hover
+				i 
+					:color $red
+			i 
+				:color $blue
+				:background-color white
+				:width 50px
+				:height 50px
+				:line-height 50px
+				:border-radius 50%
+				:text-align center
+				:font-size 26px	
+				:transition 0.3s
 
 
