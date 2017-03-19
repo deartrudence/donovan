@@ -3,19 +3,20 @@
 	<div class="title">
 	</div>
 		<div class="wrapper wrapper--flex">
-			<a href="#" class="logo">
+			<a href="#header" class="logo">
 				<p>Donovan Bailey</p>
 			</a>
 			<a href="#" class="main--toggle">
 				<span></span>
 			</a>
 			<ul class="wrapper--flex menu--main">
-				<li><a href="#about">Foundation</a></li>
-				<li><a href="#services">Athlete Story</a></li>
-				<li><a href="#contact">Bailey Inc.</a></li>
-				<li><a href="#request">Contact</a></li>
-				<li><a href="#about"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#services"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#foundation">Foundation</a></li>
+				<li><a href="#athlete-story">Athlete Story</a></li>
+				<li><a href="#bailey-inc">Bailey Inc.</a></li>
+				<li><a href="#footer">Contact</a></li>
+				<li><a href="#about" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#about" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#services" target="_blank"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div>		
 			<a href="#">
@@ -26,7 +27,7 @@
 	</div>
 </nav>
 
-<header>
+<header id="header">
 	<div class="background-image" style="background-image: url('<%= @page.header_image.url %>')">
 		<div class="wrapper header--wrapper">
 			
@@ -79,8 +80,14 @@
 
 		<h2>The Donovan Bailey Foundation</h2>
 		<p>Giving is a reflection of Donovan Baiey's values; values ;that were instilled in him by his parents.  He has always believed that helping others improves your self-worth.  Getting involved with charitable organizations within your community and around the world untimately is good for everyone.</p>
-		<%= image_tag @page.secondary_foundation_image %>
 
+
+	</div>
+</section>
+
+<section id="bailey-inc">
+	<div class="wrapper">
+		<%= image_tag @page.secondary_foundation_image %>
 		<h2>Bailey Inc.</h2>
 		<p>Since retiring, Donovan has brought the same vigor and determination that he had on the track to the business world.  With an internationally-known profile and an entrepreneurial sense, Donovan has accelerated from the start to become a leader, once again, in several start-up companies.</p>
 		<div class="info wrapper--flex">
@@ -103,12 +110,21 @@
 					<li>Broadcasting & Media</li>
 				</ul>
 			</div>
-		</div>
-
+		</div>		
 	</div>
 </section>
 
-<section id="social" >
+<section id="social">
+	<div class="wrapper social-description">
+		<h2>Follow Donovan</h2>
+		<p>Get the most up to date posts from Donovan and be sure to follow along on social media.</p>
+		<ul class="social-icons">
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+		</ul>
+	</div>
 	<div class="wrapper wrapper--flex tweet-flex">
 		<div class="social-element col--four">
 			<div class="tweet">
@@ -157,7 +173,7 @@
 	</div>
 </section>
 
-<footer>
+<footer id='footer'>
 	<div class="wrapper wrapper--flex">
 		<div class="col--two">
 			<h3>Contact Donovan</h3>
@@ -171,9 +187,10 @@
 			</div>
 			<h3>Follow donovan on Social Media</h3>
 			<ul class="social-icons">
-				<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
 				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
 			</ul>
 		</div>
 		<div class="col--two">
@@ -187,6 +204,22 @@
 		</div>
 	</div>
 </footer>
+
+<script>
+	// Scroll to anchor tags
+	$('a[href*="#"]:not([href="#"])').click(function() {
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	    var target = $(this.hash);
+	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	    if (target.length) {
+	      $('html, body').animate({
+	        scrollTop: target.offset().top
+	      }, 1000);
+	      return false;
+	    }
+	  }
+	});
+</script>
 
 
 
