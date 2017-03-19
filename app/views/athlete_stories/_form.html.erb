@@ -1,0 +1,27 @@
+<%= form_for(athlete_story) do |f| %>
+  <% if athlete_story.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(athlete_story.errors.count, "error") %> prohibited this athlete_story from being saved:</h2>
+
+      <ul>
+      <% athlete_story.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pages_id %>
+    <%= f.text_field :pages_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

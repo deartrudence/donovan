@@ -1,26 +1,68 @@
 class PagesController < ApplicationController
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
-  require 'rinku'
-  def home
-  #   @requested_quote = RequestedQuote.new
-  # 	@tweets = Tweet.last(5)
-  # 	@instagrams = Gram.last(5)
-  #   @facebooks = Facebook.first(2)
+  before_action :set_page, only: [:show, :edit, :update, :destroy]
 
-  # 	@socials = []
-  # 	(0..4).each do |i|
-  # 	  @socials << @tweets[i]
-  # 	  @socials << @instagrams[i]
-  # 	end
 
-  #   if params[:thing]
-  #     @first = params[:first]
-  #     @last = params[:last]
-  #     @email = params[:email]
-  #     @phone = params[:phone]
-  #     @comment = params[:comment]
-  #     RequestQuote.new_quote_request(@first, @last, @email, @phone, @comment).deliver
-  #   end  
+  # GET /pages/1
+  # GET /pages/1.json
+  def show
   end
+
+
+  # GET /pages/1/edit
+  def edit
+    respond_to do |format|
+      format.html {render :layout => 'admin'}
+    end
+  end
+
+  # POST /pages
+  # POST /pages.json
+  def create
+    @page = Page.new(page_params)
+
+    respond_to do |format|
+      if @page.save
+        format.html { redirect_to @page, notice: 'Page was successfully created.' }
+        format.json { render :show, status: :created, location: @page }
+      else
+        format.html { render :new }
+        format.json { render json: @page.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PATCH/PUT /pages/1
+  # PATCH/PUT /pages/1.json
+  def update
+    respond_to do |format|
+      if @page.update(page_params)
+        format.html { redirect_to @page, notice: 'Page was successfully updated.' }
+        format.json { render :show, status: :ok, location: @page }
+      else
+        format.html { render :edit }
+        format.json { render json: @page.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /pages/1
+  # DELETE /pages/1.json
+  def destroy
+    @page.destroy
+    respond_to do |format|
+      format.html { redirect_to pages_url, notice: 'Page was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_page
+      @page = Page.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def page_params
+      params.require(:page).permit(:tag_line, :secondary_tag_line, :secondary_description, :header_image, :secondary_image, :foundation_image, :secondary_foundation_image, athlete_stories_attributes:[:id, :image, :description, :_destroy])
+    end
 end

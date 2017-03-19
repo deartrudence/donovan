@@ -1,0 +1,20 @@
+<div class="wrapper--flex athlete-story-form">
+
+	<div class="field col--two">
+		<%= image_tag f.object.image.url, class:'athlete-img'  if f.object.image.url.present?%>
+	</div>
+	<div class="field col--two">
+	  <%= f.label :description %>
+	  <%= f.text_area :description %>
+	</div>
+	<div class="field col--two">
+	  <%= f.label :image %>
+	  <%= f.file_field :image %>
+	</div>
+	<div class="col--two">
+	</div>
+	<div class="field col--two">
+	  <%= f.label :remove_story, class: 'danger' %>
+	  <%= f.check_box :_destroy %>
+	</div>
+</div>

@@ -1,0 +1,192 @@
+<nav>
+<div class="wrapper--flex">
+	<div class="title">
+	</div>
+		<div class="wrapper wrapper--flex">
+			<a href="#" class="logo">
+				<p>Donovan Bailey</p>
+			</a>
+			<a href="#" class="main--toggle">
+				<span></span>
+			</a>
+			<ul class="wrapper--flex menu--main">
+				<li><a href="#about">Foundation</a></li>
+				<li><a href="#services">Athlete Story</a></li>
+				<li><a href="#contact">Bailey Inc.</a></li>
+				<li><a href="#request">Contact</a></li>
+				<li><a href="#about"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#services"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+		</div>		
+			<a href="#">
+				<div class="blue-half-circle">
+					<p>Book Donovan</p>
+				</div>
+			</a>
+	</div>
+</nav>
+
+<header>
+	<div class="background-image" style="background-image: url('<%= @page.header_image.url %>')">
+		<div class="wrapper header--wrapper">
+			
+			<div class="header--text">
+				<h2><%= @page.tag_line %></h2>
+			</div>
+		</div>
+		<div class="lower-nav">
+			<div class="lower-nav--content wrapper--flex ">
+				<p>His foundation</p>
+				<div class="red-half-circle">
+					<p>Donovan Bailey</p>
+				</div>
+				<p>Social Gallery</p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="donovan">
+		<!-- <img src="http://lorempixel.com/900/1100/sports/" alt=""> -->
+		<%= image_tag @page.secondary_image.url %>
+		<div class="wrapper top">
+			<h2><%= @page.secondary_tag_line%></h2>
+		</div>
+		<div class="wrapper bottom">
+			<p><%= @page.secondary_description %></p>
+		</div>
+</section>
+
+
+
+<section id="athlete-story">
+		<% @page.athlete_stories.each do |athlete_story| %>
+	<div class="wrapper wrapper--flex">
+				<div class="col--two">
+					<%= image_tag athlete_story.image.url %>
+				</div>
+				<div class="col--two">
+					<p><%= athlete_story.description %></p>
+				</div>
+	</div>
+		<% end %>
+</section>
+
+<section id="foundation">
+	<div class="wrapper">
+
+		<%= image_tag @page.foundation_image.url %>
+
+		<h2>The Donovan Bailey Foundation</h2>
+		<p>Giving is a reflection of Donovan Baiey's values; values ;that were instilled in him by his parents.  He has always believed that helping others improves your self-worth.  Getting involved with charitable organizations within your community and around the world untimately is good for everyone.</p>
+		<%= image_tag @page.secondary_foundation_image %>
+
+		<h2>Bailey Inc.</h2>
+		<p>Since retiring, Donovan has brought the same vigor and determination that he had on the track to the business world.  With an internationally-known profile and an entrepreneurial sense, Donovan has accelerated from the start to become a leader, once again, in several start-up companies.</p>
+		<div class="info wrapper--flex">
+			<div class="col--two">
+				<h4>Proud Board Member of:</h4>
+				<ul>
+					<li>ParticipAction Canada</li>
+					<li>Circle of Champions</li>
+					<li>Merge Inc.</li>
+					<li>Honourary Big Brother with the Big Brothers Big Sisters of Toronto</li>
+					<li>Former Big Brother Big Sisters of Canada "Bowl for Kids Sake" National spokesperson</li>
+				</ul>
+			</div>
+			<div class="col--two">
+				<h4>Book Donovan to Contact him about opportunities in:</h4>
+				<ul>
+					<li>Brand Ambassadorship</li>
+					<li>Real Estate Investment</li>
+					<li>Speed and Power Consulting</li>
+					<li>Broadcasting & Media</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section id="social" >
+	<div class="wrapper wrapper--flex tweet-flex">
+		<div class="social-element col--four">
+			<div class="tweet">
+				<p>tweet first</p>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="social-element col--four">
+			<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="social-element col--four">
+			<div class="tweet">
+				<p>tweet second</p>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="social-element col--four">
+				<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+		</div>
+		<div class="social-element col--four">
+			<div class="tweet">
+				<p>tweet three</p>
+				<a href=""><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="social-element col--four">
+			<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="social-element col--four">
+			<div class="tweet">
+				<p>tweet four</p>
+				<a href=""><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="social-element col--four">
+			<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="wrapper wrapper--flex">
+		<div class="col--two">
+			<h3>Contact Donovan</h3>
+			<p>To contact us, or for any media inquiries, please contact us using the general inquiry form, or call toll free:</p>
+			<p> <i class="fa fa-phone"></i> (+1) 416-204-9962</p>
+			<div class="address">
+				<p>Atheletics Canada National Offic</p>
+				<p>Suite B1-110 2445 St-Laurent Blvd.</p>
+				<p>Ottawa, Ontario</p>
+				<p>K1G 6C3</p>
+			</div>
+			<h3>Follow donovan on Social Media</h3>
+			<ul class="social-icons">
+				<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			</ul>
+		</div>
+		<div class="col--two">
+			<h3>General Inquiry Form</h3>
+			<form action="" id="general-inquiry">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<input type="textarea">
+			</form>
+		</div>
+	</div>
+</footer>
+
+
+

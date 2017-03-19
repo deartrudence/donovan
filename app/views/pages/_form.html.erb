@@ -1,0 +1,79 @@
+<%= form_for(page) do |f| %>
+  <% if page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(page.errors.count, "error") %> prohibited this page from being saved:</h2>
+
+      <ul>
+      <% page.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tag_line %>
+    <%= f.text_field :tag_line %>
+  </div>
+
+  <div class="field">
+    <%= f.label :header_image %>
+    <%= image_tag page.header_image.url(:medium) %>
+    <%= f.file_field :header_image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_tag_line %>
+    <%= f.text_field :secondary_tag_line %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_image %>
+    <%= image_tag page.secondary_image.url(:medium) %>
+    <%= f.file_field :secondary_image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_description %>
+    <%= f.text_area :secondary_description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :foundation_image %>
+    <%= image_tag page.foundation_image.url(:medium) %>
+    <%= f.file_field :foundation_image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_foundation_image %>
+    <%= image_tag page.secondary_foundation_image.url(:medium) %>
+    <%= f.file_field :secondary_foundation_image %>
+  </div>
+
+  <h2>Athlete Stories</h2>
+
+  <%= f.fields_for :athlete_stories do |builder| %>
+    <%= render 'athlete_story_fields', f: builder %>
+  <% end %>
+
+  <%= link_to_add_fields "Athlete Story", f, :athlete_stories %>
+
+  <hr>
+  <br><br><br> 
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<script>
+  // Add Another Image
+  $('.edit_page').on('click', '.add_fields', function(e){
+    e.preventDefault();
+    time = new Date().getTime();
+    regexp = new RegExp($(this).data('id'), 'g');
+    console.log($(this))
+
+    $(this).before($(this).data('fields').replace(regexp, time));
+  });
+</script>
