@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170319141441) do
+ActiveRecord::Schema.define(version: 20170319193625) do
 
   create_table "athlete_stories", force: :cascade do |t|
     t.text     "description"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(version: 20170319141441) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.index ["page_id"], name: "index_athlete_stories_on_page_id"
+  end
+
+  create_table "grams", force: :cascade do |t|
+    t.string   "text"
+    t.string   "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "url"
   end
 
   create_table "pages", force: :cascade do |t|
@@ -46,6 +54,13 @@ ActiveRecord::Schema.define(version: 20170319141441) do
     t.string   "secondary_foundation_image_content_type"
     t.integer  "secondary_foundation_image_file_size"
     t.datetime "secondary_foundation_image_updated_at"
+  end
+
+  create_table "tweets", force: :cascade do |t|
+    t.string   "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "url"
   end
 
 end

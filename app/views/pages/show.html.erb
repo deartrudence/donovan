@@ -14,9 +14,9 @@
 				<li><a href="#athlete-story">Athlete Story</a></li>
 				<li><a href="#bailey-inc">Bailey Inc.</a></li>
 				<li><a href="#footer">Contact</a></li>
-				<li><a href="#about" target="_blank"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#about" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#services" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/donovanbailey" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div>		
 			<a href="#">
@@ -119,59 +119,34 @@
 		<h2>Follow Donovan</h2>
 		<p>Get the most up to date posts from Donovan and be sure to follow along on social media.</p>
 		<ul class="social-icons">
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-			<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+			<li><a href="https://twitter.com/donovanbailey"><i class="fa fa-twitter" target="_blank"></i></a></li>
+			<li><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="https://www.youtube.com/user/donovanbaileyinc" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
 		</ul>
 	</div>
 	<div class="wrapper wrapper--flex tweet-flex">
-		<div class="social-element col--four">
-			<div class="tweet">
-				<p>tweet first</p>
-				<a href="#"><i class="fa fa-twitter"></i></a>
+		<% @socials.each_with_index do |social, index| %>
+			<div class="social-element col--four">
+				<% if index.modulo(2).zero? %>
+					<% if social.present? %>
+						<div class="tweet">
+							<p ><%= Rinku.auto_link(social.text, :all, 'target="_blank"').html_safe %></p>
+							<a href="<%= social.url %>" target="_blank"><i class="fa fa-twitter"></i></a>
+						</div>
+					<% end %>
+				<% else %>
+					<% if social.present? %>
+						<div class="instagram" style="background-image: url(<%= social.image_url %>)">
+							<a href="<%= social.url %>" target="_blank"><i class="fa fa-instagram"></i></a>
+						</div>
+					<% end %>
+				<% end %>
 			</div>
-		</div>
-		<div class="social-element col--four">
-			<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
-				<a href="#"><i class="fa fa-instagram"></i></a>
-			</div>
-		</div>
-		<div class="social-element col--four">
-			<div class="tweet">
-				<p>tweet second</p>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-			</div>
-		</div>
-		<div class="social-element col--four">
-				<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
-					<a href="#"><i class="fa fa-instagram"></i></a>
-				</div>
-		</div>
-		<div class="social-element col--four">
-			<div class="tweet">
-				<p>tweet three</p>
-				<a href=""><i class="fa fa-twitter"></i></a>
-			</div>
-		</div>
-		<div class="social-element col--four">
-			<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
-				<a href="#"><i class="fa fa-instagram"></i></a>
-			</div>
-		</div>
-		<div class="social-element col--four">
-			<div class="tweet">
-				<p>tweet four</p>
-				<a href=""><i class="fa fa-twitter"></i></a>
-			</div>
-		</div>
-		<div class="social-element col--four">
-			<div class="instagram" style="background-image: url('http://lorempixel.com/200/200/sports/')">
-				<a href="#"><i class="fa fa-instagram"></i></a>
-			</div>
-		</div>
+		<% end %>
 	</div>
 </section>
+
 
 <footer id='footer'>
 	<div class="wrapper wrapper--flex">
@@ -187,10 +162,10 @@
 			</div>
 			<h3>Follow donovan on Social Media</h3>
 			<ul class="social-icons">
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-				<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+				<li><a href="https://twitter.com/donovanbailey"><i class="fa fa-twitter" target="_blank"></i></a></li>
+				<li><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook" target="_blank"></i></a></li>
+				<li><a href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram" target="_blank"></i></a></li>
+				<li><a href="https://www.youtube.com/user/donovanbaileyinc" target="_blank"><i class="fa fa-youtube-play" target="_blank"></i></a></li>
 			</ul>
 		</div>
 		<div class="col--two">

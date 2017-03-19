@@ -5,6 +5,13 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    @tweets = Tweet.last(4)
+    @instagrams = Gram.last(4)
+    @socials = []
+    (0..3).each do |i|
+      @socials << @tweets[i]
+      @socials << @instagrams[i]
+    end
   end
 
 
