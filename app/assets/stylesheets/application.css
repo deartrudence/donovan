@@ -13,6 +13,32 @@
  *= require_tree .
  *= require_self
  */
+@font-face{
+ font-family: 'DINNextLTBold';
+ src: url('/assets/DINNextLTPro-Heavy.otf');
+ src: url('/assets/DINNextLTPro-Heavy.otf') format('opentype');
+}
+
+@font-face{
+ font-family: 'DINNextLT';
+ src: url('/assets/DINNextLTPro-Regular.otf');
+ src: url('/assets/DINNextLTPro-Regular.otf') format('opentype');
+}
+
+@font-face{
+ font-family: 'GothamBold';
+ src: url('/assets/Gotham-Bold.otf');
+ src: url('/assets/Gotham-Bold.otf') format('opentype');
+}
+
+@font-face{
+ font-family: 'BodonLTIta';
+ src: url('/assets/BodonLTIta');
+ src: url('/assets/BodonLTIta') format('opentype');
+}
+
+
 @import 'variables';
 @import 'home';
  .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } 
+

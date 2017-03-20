@@ -8,7 +8,7 @@ html
 *, *:before, *:after
 	:box-sizing inherit	
 body
-	:font-family $body-font	
+	:font-family $DINN-font	
 	:font-size 1.5rem
 	:line-height 2.6rem
 	:margin 0
@@ -116,13 +116,14 @@ $grid-base: 40
 				+make-column(20)				
 
 section
-	:padding 140px 0	
+	:padding-top 140px	
 	+display-for(sm xs)
 		:padding 80px 0				
-
+footer 
+	:margin-top 140px
 //fonts stuff			
 h2, h3, h4 
-	:font-family $title-font
+	:font-family $DINN-font
 	:font-weight normal
 h2 
 	:font-size 4rem	
@@ -160,7 +161,7 @@ input[type=submit]
 	:max-width 650px
 	:margin 0 auto
 .text-primary
-	:font-family $hl-font
+	:font-family $DINN-font
 	:font-style italic
 h2.hl 
 	:color $gold
@@ -171,7 +172,7 @@ h2.hl
 	:padding 10px 12px 8px 12px
 	:transition 0.3s all ease
 	:cursor pointer
-	:font-family $title-font
+	:font-family $DINN-font
 	:font-size 1.6rem
 	:letter-spacing 1.2px
 .button--primary
@@ -255,6 +256,7 @@ nav
 			+make-column(40)
 		p 
 			:color white
+			:font-family $Gotham-font
 			:font-weight bold
 			:font-size 2rem
 			:text-transform uppercase
@@ -284,7 +286,8 @@ nav
 		a 
 			:text-decoration none
 			:color $blue
-			:font-family $title-font
+			:font-family $DINN-font
+			:font-size 18px
 			:text-transform uppercase
 			:letter-spacing 0.8px
 			+display-for(md sm xs)
@@ -352,10 +355,12 @@ header
 	h2 
 		:text-align center
 		:margin 0 0 12px
-		:font-size 60px
+		:font-size 40px
 		:font-weight bold
 		:line-height 1.3
 		:text-transform uppercase
+		:text-shadow 1px 1px 1px black
+		:font-family  $Gotham-font
 		+display-for(xs)
 			:margin-right 10px
 	.background-image
@@ -366,6 +371,7 @@ header
 		:background-color $blue
 		a 
 			:color white
+			:font-weight bold
 			&:hover
 				p
 					:color #c3c3c3
@@ -427,6 +433,7 @@ section#donovan
 		:background-size cover
 	h2 
 		:margin 0
+		:font-family $DINN-font
 	.top	
 		:position absolute
 		:top 100px
@@ -514,6 +521,8 @@ section#bailey-inc-form
 				:outline 1px solid #333
 				:border none
 				:margin-bottom 25px
+				:font-family $DINN-font
+				:font-size 18px
 			input[type=submit]
 				:outline none
 				:width 50%
@@ -619,6 +628,7 @@ section#social
 		:display flex
 		:position absolute
 		:padding 0 20px
+		:font-family $DINN-font
 		:height 80%
 		// :overflow scroll
 		:margin auto
@@ -628,7 +638,6 @@ section#social
 		:right 0
 		:color white
 		:font-size 16px
-		:font-family $body-font
 		&:hover
 			i
 				:visibility visible
@@ -706,7 +715,7 @@ footer
 		:margin 0 0 12px
 		:text-transform uppercase
 	p 
-		:font-family $hl-font
+		:font-family $DINN-font
 		:font-size 1.2rem
 		:line-height 1.8rem
 	.address
