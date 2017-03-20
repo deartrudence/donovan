@@ -140,8 +140,18 @@ h4
 	:font-size 1.8rem	
 	:line-height 2rem
 a 
-	:transition 0.3s all ease	
+	:transition 0.3s all ease
 
+input[type=submit]
+	:background-color $red
+	:color white
+	:padding 10px 30px
+	:text-transform uppercase
+	:font-weight bold
+	:float right
+	&:hover
+		:background-color white		
+		:color $red
 .text-primary, .text-secondary 
 	:letter-spacing 0.4
 	:line-height 3.2rem
@@ -183,13 +193,13 @@ nav
 	:width 100%
 	:z-index 10
 	.fa
-		:width 32px
-		:height 32px
+		:width 36px
+		:height 36px
 		:margin-left 10px
 		:background-color $blue
 		:color white
 		:font-size 16px
-		:line-height 32px
+		:line-height 35px
 		:border-radius 50%
 		:border 2px solid $blue
 		:text-align center
@@ -354,6 +364,12 @@ header
 	.lower-nav 
 		:color white
 		:background-color $blue
+		a 
+			:color white
+			&:hover
+				p
+					:color #c3c3c3
+					:transition 0.3s
 		&--content
 			:max-width 50%
 			:margin auto auto
@@ -400,35 +416,7 @@ header
 			+display-for(xs)
 				:width 100%
 				:text-align center
-
-//ABOUT
-// .about 
-// 	:background-color white
-// 	.text-primary
-// 		:margin-bottom 140px
-// 		+display-for(xs)
-// 			:margin-bottom 80px
-// 	.col--two
-// 		&:nth-of-type(2n + 2)
-// 			:padding 0 30px
-// 			+display-for(xs)
-// 				:padding 0
-// 		&:nth-of-type(2n + 1)
-// 			+display-for(sm xs)
-// 				:height 200px 
-// 				:overflow hidden
-// 				:margin-bottom 22px	
-// 	.wrapper--flex	
-// 		:margin-bottom 60px
-// 		&:nth-of-type(2)
-// 			:flex-direction row-reverse
-// 			.col--two
-// 				&:nth-of-type(2n + 2)	
-// 					:padding-left 0
-// 					+display-for(sm)
-// 						:padding-left 20px
-// 					+display-for(xs)
-// 						:padding 0		
+	
 
 section#donovan
 	:padding 0
@@ -461,6 +449,8 @@ section#athlete-story
 			:background-color $red
 		&:nth-of-type(2n)
 			:background-color $blue
+		+display-for(xs)
+			:padding 0
 	.col--two
 		:display flex
 		:position relative
@@ -471,6 +461,10 @@ section#athlete-story
 		img 
 			:width 100%
 			:height 100%
+		+display-for(xs)
+			&:nth-of-type(2n)
+				:min-height 250px
+
 
 section#foundation, #bailey-inc
 	h2 
@@ -481,14 +475,14 @@ section#foundation, #bailey-inc
 		:font-style italic
 		:text-transform uppercase
 	p 
-		:width 60%
+		:width 75%
 		:text-align center
 		:margin 0 auto
 		:padding-bottom 50px
 	.info 
 		:align-items flex-start
-		:background-color #ddd
-		:padding 40px
+		:width 75%
+		:margin 0 auto
 		.col--two
 			:padding 40px
 		h4
@@ -497,63 +491,33 @@ section#foundation, #bailey-inc
 			:font-weight bold
 		li 
 			:list-style none
-//PEOPLE
-// .people
-// 	:background $lightgrey
-// 	img 
-// 		:border-radius 50%
-// 		:width 70%
-// 		:display block
-// 		:margin 0 auto
+				:margin 20px
 
-// 	.wrapper--flex
-// 		&:nth-of-type(1)
-// 			:margin-bottom 60px
-// 			.col--img
-// 				:padding-left 80px
-// 		&:nth-of-type(2)
-// 			:flex-direction row-reverse	
-// 			.col--img 
-// 				:padding-right 80px	
-// 		.col--img 
-// 			+display-for(sm xs)
-// 				:padding 0 !important
-// 				:margin 20px		
+//BAILEY INC FORM
 
-// SERVICES
-// .services 
-// 	:background-color white
-// 	h2 
-// 		:text-align center
-// 	h3 
-// 		:margin 0 0 18px 0
-// 		+display-for(xs)
-// 			:text-align center	
-// 	.text-secondary
-// 		:margin-bottom 80px	
-// 	i 
-// 		:height 60px
-// 		:width 60px
-// 		:border 2px solid $gold
-// 		:border-radius 50%
-// 		:text-align center
-// 		:line-height 60px
-// 		:font-size 20px	
-// 		:transition 0.3s all ease
-// 		:cursor pointer
-// 		+display-for(xs)
-// 			:margin 0 auto 20px
-// 	// i:hover
-// 	// 	:background $gold	
-// 	.wrapper--flex
-// 		:width 80%
-// 		:margin 0 auto 48px
-// 		p 
-// 			:color $darkgrey	
-// 		div 
-// 			:width calc(100% - 100px)
-// 			+display-for(xs)
-// 				:width 100%
+section#bailey-inc-form
+	.bailey-inc-form
+		:background-color #ddd
+		:padding 6% 16%
+		:text-align center
+		h2 
+			:font-weight bold
+		h2, h4
+			:color $blue
+			:text-transform uppercase
+		.bailey-form
+			:width 60%
+			:margin 0 auto
+			input, textarea
+				:width 100%
+				:padding 15px
+				:outline 1px solid #333
+				:border none
+				:margin-bottom 25px
+			input[type=submit]
+				:outline none
+				:width 50%
+
 //SOCIAL
 section#social
 	.social-description
@@ -599,29 +563,7 @@ section#social
 			:content ""
 			:display block
 			:padding-bottom 100%
-		+display-for(md sm)
-			&:nth-of-type(1)
-				:order 1
-			&:nth-of-type(2)
-				:order 2
-			&:nth-of-type(3)
-				:order 3
-			&:nth-of-type(4)
-				:order 4
-			&:nth-of-type(5)
-				:order 5
-			&:nth-of-type(6)
-				:order 6
-			&:nth-of-type(7)
-				:order 7
-			&:nth-of-type(8)
-				:order 8
-			&:nth-of-type(9)
-				:order 9	
-			&:nth-of-type(10)
-				:display none
-
-		+display-for(xs)
+		+display-for(xs sm)
 			&:nth-of-type(1)
 				:order 1
 			&:nth-of-type(2)
@@ -708,27 +650,22 @@ section#social
 				:transition 0.3s
 				&:hover
 					:color $red
-		p 
-			:line-height 28px
-			:margin auto
-		+display-for(lg md)
-			:padding 0px 15px
-			:height 80%
-			p 
-				:line-height 18px
-				:margin auto
-		+display-for(sm xs)
-			:padding 0 15px
-			:height 90%
+
+		// +display-for(sm xs)
+		// 	:padding 0 15px
+		// 	:height 90%
 		a 
 			:color white
 			:font-weight bold
 			:word-break break-all
 			:display inline-block
-
 		p 
 			:align-self center
+			// :line-height 20px
 			:font-size 18px
+			:margin auto
+			a 
+				:position relative
 			+display-for(lg)
 				:font-size 16px
 				:line-height 1.2
@@ -737,118 +674,25 @@ section#social
 				:line-height 1.2
 			+display-for(sm)
 				:font-size 16px
-				:line-height 1.8			
+				:line-height 1.8	
+				// :padding 0 15px
+				// :height 90%		
 			+display-for(xs)
-				:font-size 13px
+				:font-size 10px
 				:line-height 1.3
-		
-.square
-	:position relative
-	// :width 20%
-	:border 2px solid black
-.square:after
-	:content ""
-	:display block
-	:padding-bottom 100%
-
-//FACEBOOK
-.facebook
-	:background $lightgrey
-	.wrapper--flex
-		:align-items flex-start
-	.col--two
-		:width 46%
-		+display-for(sm xs)
-			:width 100% 
-	img
-		:max-width 100% 
-		:height 300px
-		:object-fit cover
-		+display-for(md sm xs)
-			:height 200px		
-	a
-		:color #111
-		&:hover
-			:color $red
-	p 
-		:margin-bottom 0
-		:word-break break-word
-
-//CONTACT
-.contact 
-	:background-color white
-	:background $gold
-	:padding 0
-	.wrapper--flex
-		:align-items stretch
-	.contact--info 
-		:text-align center
-		:padding 80px 0
-		p
-			:margin 0 0 8px 0
-		div:first-of-type
-			:margin-bottom 30px
-	.contact--map
-		:background image-url('map-with-marker.png') center
-		:background-size cover	
+				// :padding 0 15px
+				// :height 90%
+	.square
 		:position relative
-		+display-for(sm xs)
-			:height 400px
-		a 
-			:position absolute
-			:top 0 
-			:left 0
-			:height 100%
-			:width 100%
+		// :width 20%
+		:border 2px solid black
+	.square:after
+		:content ""
+		:display block
+		:padding-bottom 100%
 
-.request
-	:background-color white			
-	form, h2
-		:width 80%
-		:margin 0 auto
-	h2 
-		:margin-bottom 3.2rem	
-	form
-		input:-webkit-autofill
-			:-webkit-box-shadow 0 0 0px 1000px #f5e7bb inset
-		label	
-			:font-size 13px
-			:text-transform uppercase
-			:transition 0.3s all ease
-		textarea
-			:border 2px solid black
-			:width 100%
-		input[type=submit]
-			:float right
-		.comments-label 
-			:padding-left 6px
-			+display-for(sm xs)	
-				:padding-left 0	
-		.col--two	
-			:position relative
-			label
-				:position absolute
-				:top 0
-				:left 6px
-				+display-for(sm xs)
-					:left 0
-			input
-				:width 100%
-				:border none
-				:border-bottom 2px solid black
-				:padding 12px
-				:margin-bottom 20px
-		.col--two:nth-of-type(2n + 1)
-			:padding-right 10px	
-		.col--two:nth-of-type(2n + 2)		
-			:padding-left 10px
-			label
-				:left 16px
-				+display-for(sm xs)
-					:left 0
-		.col--two:nth-of-type(2n + 2), .col--two:nth-of-type(2n + 1)
-			+display-for(sm xs)
-				:padding 0
+
+
 //FOOTER
 footer
 	:background-image image-url('footer.png')
@@ -870,11 +714,13 @@ footer
 		p 
 			:margin 0
 	#general-inquiry
-		input 
+		input, textarea 
 			:width 100%
 			:padding 10px
 			:border none
-			:margin-bottom 20px	
+			:margin-bottom 20px
+		input[type=submit]
+			:width 40%	
 	.social-icons
 		:padding 0
 		li 

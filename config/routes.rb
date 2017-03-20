@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get 'upload_grams' => 'grams#upload'
   get 'upload_tweets' => 'tweets#upload'
 
+  post 'general_inquiry' => 'pages#general_inquiry'
+  post 'bailey_inc_inquiry' => 'pages#bailey_inc_inquiry'
+
 end

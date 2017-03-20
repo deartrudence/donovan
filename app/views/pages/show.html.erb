@@ -19,7 +19,7 @@
 				<li><a href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div>		
-			<a href="#">
+			<a href="#bailey-inc-form">
 				<div class="blue-half-circle">
 					<p>Book Donovan</p>
 				</div>
@@ -37,11 +37,11 @@
 		</div>
 		<div class="lower-nav">
 			<div class="lower-nav--content wrapper--flex ">
-				<p>His foundation</p>
+				<a href="#foundation"><p>His foundation</p></a>
 				<div class="red-half-circle">
 					<p>Donovan Bailey</p>
 				</div>
-				<p>Social Gallery</p>
+				<a href="#social"><p>Social Gallery</p></a>
 			</div>
 		</div>
 	</div>
@@ -114,6 +114,31 @@
 	</div>
 </section>
 
+<section id="bailey-inc-form">
+	<div class="wrapper bailey-inc-form">
+		<h2>Leadership starts with accessibility</h2>
+		<p>Donovan's physical dominance, mental brilliance and impenertrable drive have helped him achieve success in all of his endeavors, making his appearances highly sought-after globally.</p>
+		<p>Whether it is a workshop, a roundtable discussion, a 'meet and greet', or a golf game.  Donovan approaches all bookings with the same focus and discipline that brought him to greatness on the track.</p>
+		<h4>Please provide your contact details</h4>
+		<div class="bailey-form">
+			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true) do %>
+				<div class="first">
+					<%= text_field_tag :name %>
+					<%= text_field_tag :email %>
+					<%= text_field_tag :number %>
+					<%= text_field_tag :company %>
+				</div>
+				<div class="second">
+					<%= text_field_tag :location %>
+					<%= date_field_tag :date %>
+					<%= text_area_tag :info %>
+				</div>
+				<%= submit_tag 'submit' %>
+			<% end %>
+		</div>
+	</div>
+</section>
+
 <section id="social">
 	<div class="wrapper social-description">
 		<h2>Follow Donovan</h2>
@@ -170,12 +195,13 @@
 		</div>
 		<div class="col--two">
 			<h3>General Inquiry Form</h3>
-			<form action="" id="general-inquiry">
-				<input type="text">
-				<input type="text">
-				<input type="text">
-				<input type="textarea">
-			</form>
+			<%= form_tag(general_inquiry_path, method: 'post', multipart: true, id: 'general-inquiry' ) do %>
+				<%= text_field_tag :name, nil, :placeholder => "Full Name" %>
+				<%= text_field_tag :email, nil, :placeholder => "Email" %>
+				<%= text_field_tag :number, nil, :placeholder => "Phone Number" %>
+				<%= text_area_tag :comment, nil, :placeholder => "Your Question/Comment" %>
+				<%= submit_tag 'submit' %>
+			<% end %>
 		</div>
 	</div>
 </footer>

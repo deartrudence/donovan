@@ -12,6 +12,15 @@ class PagesController < ApplicationController
       @socials << @tweets[i]
       @socials << @instagrams[i]
     end
+    @tweet = Tweet.new
+  end
+
+  def general_inquiry
+    raise 'hell'
+  end
+
+  def bailey_inc_inquiry
+    raise 'hell'
   end
 
 
