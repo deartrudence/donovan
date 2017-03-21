@@ -15,32 +15,32 @@
  */
 @font-face{
  font-family: 'DINNextLTBold';
- src: font-url('DINNextLTPro-Heavy.otf');
- src: font-url('DINNextLTPro-Heavy.otf') format('opentype');
+ src: asset-url('DINNextLTPro-Heavy.otf');
+ src: asset-url('DINNextLTPro-Heavy.otf') format('opentype');
 }
 
 @font-face{
  font-family: 'DINNextLT';
- src: font-url('DINNextLTPro-Regular.otf');
- src: font-url('DINNextLTPro-Regular.otf') format('opentype');
+ src: asset-url('DINNextLTPro-Regular.otf');
+ src: asset-url('DINNextLTPro-Regular.otf') format('opentype');
 }
 
 @font-face{
  font-family: 'GothamBold';
- src: font-url('Gotham-Bold.otf');
- src: font-url('Gotham-Bold.otf') format('opentype');
+ src: asset-url('Gotham-Bold.otf');
+ src: asset-url('Gotham-Bold.otf') format('opentype');
 }
 
 @font-face{
  font-family: 'BodonBold';
- src: font-url('BauerBodoniStd-Bold.otf');
- src: font-url('BauerBodoniStd-Bold.otf') format('opentype');
+ src: asset-url('BauerBodoniStd-Bold.otf');
+ src: asset-url('BauerBodoniStd-Bold.otf') format('opentype');
 }
 
 @font-face{
  font-family: 'BodonItal';
- src: font-url('BauerBodoniStd-BoldItalic.otf');
- src: font-url('BauerBodoniStd-BoldItalic.otf') format('opentype');
+ src: asset-url('BauerBodoniStd-BoldItalic.otf');
+ src: asset-url('BauerBodoniStd-BoldItalic.otf') format('opentype');
 }
 
 @import 'variables';
