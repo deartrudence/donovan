@@ -19,6 +19,8 @@ gem "autoprefixer-rails"
 
 gem 'devise'
 
+gem "letter_opener"
+
 # facebook api
 gem "koala", "~> 2.2"
 gem 'json'

@@ -9,10 +9,10 @@ html
 	:box-sizing inherit	
 body
 	:font-family $DINN-font	
-	:font-size 1.5rem
+	:font-size 1.6rem
 	:line-height 2.6rem
 	:margin 0
-	:letter-spacing 1.5px
+	:letter-spacing 1px
 a 
 	:text-decoration none
 img 
@@ -126,7 +126,7 @@ h2, h3, h4
 	:font-family $DINN-font
 	:font-weight normal
 h2 
-	:font-size 4rem	
+	:font-size 4.2rem	
 	:line-height 4.4rem	
 	+display-for(xs)
 		:font-size 3.2rem
@@ -140,6 +140,8 @@ h3
 h4 
 	:font-size 1.8rem	
 	:line-height 2rem
+p 
+	:color #777
 a 
 	:transition 0.3s all ease
 
@@ -232,8 +234,9 @@ nav
 		p 
 			:width 50%
 			:margin 0 auto
-			:margin-top 10px
+			:margin-top 16px
 			:color white
+			:line-height 18px
 	.title 
 		:position absolute
 		:top 50%
@@ -241,8 +244,6 @@ nav
 		:height 40px
 		:background-color $red
 		:width 30%
-		// :float left
-		// :width 330px
 		&:after 
 			:content ''
 			:position absolute
@@ -286,9 +287,7 @@ nav
 			:left 0
 			:z-index 1
 		li 
-			// :font-weight bold
 			:font-size 2rem
-			// :margin-left 30px	
 			+display-for(md sm xs)
 				:width 100%
 				:text-align center
@@ -364,8 +363,7 @@ header
 
 	h2 
 		:text-align center
-		:margin 0 0 12px
-		:font-size 40px
+		:margin 0
 		:font-weight bold
 		:line-height 1.3
 		:text-transform uppercase
@@ -380,8 +378,9 @@ header
 		:color white
 		:background-color $blue
 		a 
-			:color white
-			:font-weight bold
+			p
+				:color white
+				:font-weight bold
 			&:hover
 				p
 					:color #c3c3c3
@@ -394,6 +393,7 @@ header
 			.red-half-circle
 				:background-color $red
 				:min-height 80px
+				:font-weight bold
 				:width 160px
 				:border-top none
 				:border-radius 300px 300px 0 0
@@ -406,8 +406,9 @@ header
 					:width 50%
 					:text-align center
 					:margin 0 auto
-					:margin-top 40px
+					:margin-top 30px
 					:line-height 1.3
+					:color white
 	.arrow
 		:display inline-block
 		:width 100%
@@ -443,19 +444,23 @@ section#donovan
 		:background-size cover
 	h2 
 		:margin 0
-		:font-family $BodonIt-font
-	.top	
+		:font-family $BodonItal-font 
+		:font-size 3rem
+	p 
+		:font-family $BodonItal-font 
+		:color white
+		:font-size 1.6rem
+	.top, .bottom	
 		:position absolute
+		:left 50%
+		:transform translateX(-50%)
+		:width 70%
+		:text-align center
+	.top 
 		:top 100px
-		:left 50%
-		:transform translateX(-50%)
-		:width 60%
 	.bottom
-		:position absolute
 		:bottom 100px
-		:left 50%
-		:transform translateX(-50%)
-		:width 60%
+		:width 50%
 
 section#athlete-story
 	.wrapper--flex
@@ -466,7 +471,7 @@ section#athlete-story
 			:background-color $red
 		&:nth-of-type(2n)
 			:background-color $blue
-		+display-for(xs)
+		+display-for(sm xs)
 			:padding 0
 	.col--two
 		:display flex
@@ -478,7 +483,7 @@ section#athlete-story
 		img 
 			:width 100%
 			:height 100%
-		+display-for(xs)
+		+display-for(sm xs)
 			&:nth-of-type(2n)
 				:min-height 250px
 
@@ -487,21 +492,23 @@ section#foundation, #bailey-inc
 	h2 
 		:text-align center
 		:font-weight bold
-		:font-size 60px
 		:color $blue
 		:font-style italic
 		:text-transform uppercase
+		:font-family $BodonBold-font 
 	p 
-		:width 75%
+		:width 55%
 		:text-align center
 		:margin 0 auto
 		:padding-bottom 50px
+		+display-for(sm xs)
+			:width 85%
 	.info 
 		:align-items flex-start
 		:width 75%
 		:margin 0 auto
 		.col--two
-			:padding 40px
+			:padding 4rem
 		h4
 			:color $blue
 			:text-transform uppercase
@@ -509,22 +516,42 @@ section#foundation, #bailey-inc
 		li 
 			:list-style none
 				:margin 20px
+#bailey-inc 
+	p 
+		:padding-bottom 0
+		:width 95%
+		:font-size 16px
+		:color #777
+	li 
+		:font-size 16px
+		:color #777
+	.info 
+		:width 95%
 
 //BAILEY INC FORM
 
 section#bailey-inc-form
 	.bailey-inc-form
 		:background-color #ddd
-		:padding 6% 16%
+		:padding 6% 12%
 		:text-align center
 		h2 
 			:font-weight bold
+			:font-family $BodonBold-font
+			:padding 0 50px
+			+display-for(sm xs)
+				:padding 0 
 		h2, h4
 			:color $blue
 			:text-transform uppercase
+		p, h4 
+			:padding-bottom 20px
 		.bailey-form
 			:width 60%
 			:margin 0 auto
+			:position relative
+			+display-for(sm xs)
+				:width 100%
 			input, textarea
 				:width 100%
 				:padding 15px
@@ -536,7 +563,9 @@ section#bailey-inc-form
 			input[type=submit]
 				:outline none
 				:width 50%
-				:transform translateX(-50%)
+				:float none
+			.first, .second 
+				// :position absolute
 		.dots
 			:font-size 40px
 			:margin-bottom 18px
@@ -550,6 +579,9 @@ section#social
 		h2 
 			:font-weight bold
 			:color $blue
+			:font-family $BodonItal-font 
+		p 
+			:font-family $BodonItal-font 
 	ul.social-icons
 		:padding 0
 		:display inline-block
@@ -578,6 +610,8 @@ section#social
 	.social-element
 		:position relative
 		:justify-content center
+		p 
+			:color white
 		&:nth-of-type(2n+1)
 			:background-color $red
 		&:nth-of-type(4n+1)
@@ -725,27 +759,33 @@ footer
 	:color white
 	:padding 150px 0
 	.col--two
-		:padding 0 70px	
+		:padding 0 7%	
 	h3 
 		:font-size 2rem
-		:margin 0 0 12px
 		:text-transform uppercase
 	p 
 		:font-family $DINN-font
-		:font-size 1.2rem
+		:font-size 1.5rem
 		:line-height 1.8rem
+		:color white
+	.contact 
+		:justify-content flex-start
+	.fa-phone, .fa-envelope
+		:font-size 3rem
+		:margin-right 15px
 	.address
-		margin-bottom: 20px
 		p 
 			:margin 0
+
 	#general-inquiry
 		input, textarea 
 			:width 100%
-			:padding 10px
+			:padding 14px
 			:border none
 			:margin-bottom 20px
 		input[type=submit]
-			:width 40%	
+			:width 40%
+			:font-size 1.5rem	
 	.social-icons
 		:padding 0
 		li 
@@ -759,9 +799,9 @@ footer
 			i 
 				:color $blue
 				:background-color white
-				:width 50px
-				:height 50px
-				:line-height 50px
+				:width 45px
+				:height 45px
+				:line-height 45px
 				:border-radius 50%
 				:text-align center
 				:font-size 26px	

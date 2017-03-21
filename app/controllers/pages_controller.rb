@@ -16,11 +16,19 @@ class PagesController < ApplicationController
   end
 
   def general_inquiry
-    raise 'hell'
+    begin
+      GeneralInquiryMailer.new_general_inquiry(params[:name], params[:email], params[:phone], params[:comment]).deliver!
+    rescue Errno::ECONNREFUSED
+      logger.info "!!! Warning: Failed to deliver email, skipping"
+    end
   end
 
   def bailey_inc_inquiry
-    raise 'hell'
+    begin
+      GeneralInquiryMailer.bailey_inc_inquiry(params[:name], params[:email], params[:phone], params[:company], params[:location], params[:date], params[:info]).deliver!
+    rescue Errno::ECONNREFUSED
+      logger.info "!!! Warning: Failed to deliver email, skipping"
+    end
   end
 
 

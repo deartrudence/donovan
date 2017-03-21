@@ -32,11 +32,16 @@
 }
 
 @font-face{
- font-family: 'BodonLTIta';
- src: url('/assets/BodonLTIta');
- src: url('/assets/BodonLTIta') format('opentype');
+ font-family: 'BodonBold';
+ src: url('/assets/BauerBodoniStd-Bold.otf');
+ src: url('/assets/BauerBodoniStd-Bold.otf') format('opentype');
 }
 
+@font-face{
+ font-family: 'BodonItal';
+ src: url('/assets/BauerBodoniStd-BoldItalic.otf');
+ src: url('/assets/BauerBodoniStd-BoldItalic.otf') format('opentype');
+}
 
 @import 'variables';
 @import 'home';

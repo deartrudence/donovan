@@ -51,7 +51,7 @@
 		<!-- <img src="http://lorempixel.com/900/1100/sports/" alt=""> -->
 		<%= image_tag @page.secondary_image.url %>
 		<div class="wrapper top">
-			<h2><%= @page.secondary_tag_line%></h2>
+			<h2>"<%= @page.secondary_tag_line%>"</h2>
 		</div>
 		<div class="wrapper bottom">
 			<p><%= @page.secondary_description %></p>
@@ -120,7 +120,7 @@
 		<p>Donovan's physical dominance, mental brilliance and impenertrable drive have helped him achieve success in all of his endeavors, making his appearances highly sought-after globally.</p>
 		<p>Whether it is a workshop, a roundtable discussion, a 'meet and greet', or a golf game.  Donovan approaches all bookings with the same focus and discipline that brought him to greatness on the track.</p>
 		<h4>Please provide your contact details</h4>
-		<div class="bailey-form">
+		<div class="bailey-form clearfix">
 			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true) do %>
 				<div class="first">
 					<%= text_field_tag :name, nil, placeholder: 'Full Name' %>
@@ -181,12 +181,21 @@
 		<div class="col--two">
 			<h3>Contact Donovan</h3>
 			<p>To contact us, or for any media inquiries, please contact us using the general inquiry form, or call toll free:</p>
-			<p> <i class="fa fa-phone"></i> (+1) 416-204-9962</p>
-			<div class="address">
-				<p>Atheletics Canada National Offic</p>
-				<p>Suite B1-110 2445 St-Laurent Blvd.</p>
-				<p>Ottawa, Ontario</p>
-				<p>K1G 6C3</p>
+			<div class="wrapper--flex contact">
+				<i class="fa fa-phone"></i>
+				<p>(+1) 416-204-9962</p>
+			</div>
+			
+			<div class="wrapper--flex contact">
+				<div class="address-icon">
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="address">
+					<p>Atheletics Canada National Offic</p>
+					<p>Suite B1-110 2445 St-Laurent Blvd.</p>
+					<p>Ottawa, Ontario</p>
+					<p>K1G 6C3</p>
+				</div>
 			</div>
 			<h3>Follow donovan on Social Media</h3>
 			<ul class="social-icons">
@@ -226,13 +235,17 @@
 
 	// Bailey Form show/hide
 	$('.bailey-form .second').hide();
-	$('.bailey-form').addClass('active');
+	$('.bailey-form .dots [data-panel=first]').addClass('active');
 
 	$('.dots span').on('click', function(){
+		$('.dots span').removeClass('active')
+
+		$('[data-panel='+$(this).data("panel")+']').addClass('active')
+
 		slide = "." +$(this).data('panel')
 		other = "." + $(this).data('other')
- 		$(slide).toggle({direction: 'left'}, 500)
- 		$(other).toggle({direction: 'left'}, 500)
+ 		$(slide).toggle({direction: 'left'}, 50)
+ 		$(other).toggle({direction: 'left'}, 50)
 	})
 </script>
 
