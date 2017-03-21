@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :tweets
   resources :grams
   resources :athlete_stories

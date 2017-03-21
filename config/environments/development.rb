@@ -51,6 +51,8 @@ Rails.application.configure do
   config.assets.paths << Rails.root.join('/app/assets/fonts')
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 

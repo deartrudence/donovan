@@ -123,15 +123,18 @@
 		<div class="bailey-form">
 			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true) do %>
 				<div class="first">
-					<%= text_field_tag :name %>
-					<%= text_field_tag :email %>
-					<%= text_field_tag :number %>
-					<%= text_field_tag :company %>
+					<%= text_field_tag :name, nil, placeholder: 'Full Name' %>
+					<%= text_field_tag :email, nil, placeholder: 'Email' %>
+					<%= text_field_tag :number , nil, placeholder: 'Phone Number' %>
+					<%= text_field_tag :company, nil, placeholder: 'Company/Agency' %>
 				</div>
 				<div class="second">
-					<%= text_field_tag :location %>
-					<%= date_field_tag :date %>
-					<%= text_area_tag :info %>
+					<%= text_field_tag :location, nil, placeholder: 'Location' %>
+					<%= date_field_tag :date, nil, placeholder: 'Date' %>
+					<%= text_area_tag :info, nil, placeholder: 'Any information or links related to your request?' %>
+				</div>
+				<div class="dots">
+					<span data-panel="first" data-other="second">&#9679;</span><span data-panel="second" data-other="first">&#9679;</span>
 				</div>
 				<%= submit_tag 'submit' %>
 			<% end %>
@@ -220,6 +223,17 @@
 	    }
 	  }
 	});
+
+	// Bailey Form show/hide
+	$('.bailey-form .second').hide();
+	$('.bailey-form').addClass('active');
+
+	$('.dots span').on('click', function(){
+		slide = "." +$(this).data('panel')
+		other = "." + $(this).data('other')
+ 		$(slide).toggle({direction: 'left'}, 500)
+ 		$(other).toggle({direction: 'left'}, 500)
+	})
 </script>
 
 

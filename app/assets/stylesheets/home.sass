@@ -181,10 +181,20 @@ h2.hl
 	:color white
 .button--primary:hover
 	:background white
-	:color $gold			
+	:color $gold
+
+.devise 
+	:min-height 100vh
+	.login
+		:margin auto auto	
+	input 
+		:padding 10px
+		:border 1px solid #333
+		:width 100%
+		:margin-bottom 20px		
 // NAV
-.logo-main
-	:width 240px
+// .logo-main
+// 	:width 240px
 nav 
 	:background white
 	:padding 12px 0
@@ -433,7 +443,7 @@ section#donovan
 		:background-size cover
 	h2 
 		:margin 0
-		:font-family $DINN-font
+		:font-family $BodonIt-font
 	.top	
 		:position absolute
 		:top 100px
@@ -518,7 +528,7 @@ section#bailey-inc-form
 			input, textarea
 				:width 100%
 				:padding 15px
-				:outline 1px solid #333
+				:outline 1px solid #999
 				:border none
 				:margin-bottom 25px
 				:font-family $DINN-font
@@ -526,7 +536,13 @@ section#bailey-inc-form
 			input[type=submit]
 				:outline none
 				:width 50%
-
+				:transform translateX(-50%)
+		.dots
+			:font-size 40px
+			:margin-bottom 18px
+			:color $blue
+		.active
+			:color #888
 //SOCIAL
 section#social
 	.social-description

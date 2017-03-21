@@ -17,6 +17,8 @@ gem "paperclip", "~> 5.0.0"
 
 gem "autoprefixer-rails"
 
+gem 'devise'
+
 # facebook api
 gem "koala", "~> 2.2"
 gem 'json'
