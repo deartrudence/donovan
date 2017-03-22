@@ -79,7 +79,15 @@ Rails.application.configure do
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf .otf )
   # config.assets.precompile << /\.(?:svg|eot|woff|ttf|otf)$/
-  
+  ActionMailer::Base.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'donovanbailey.herokuapp.com/',
+    :authentication => :plain,
+  }
+  ActionMailer::Base.delivery_method = :smtp
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
