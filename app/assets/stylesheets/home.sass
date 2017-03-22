@@ -244,6 +244,10 @@ nav
 		:height 40px
 		:background-color $red
 		:width 30%
+		+display-for(md)
+			:width 40%
+		+display-for(sm xs)
+			:width 70%
 		&:after 
 			:content ''
 			:position absolute
@@ -265,6 +269,7 @@ nav
 		+make-column(16)
 		+display-for(sm xs)
 			+make-column(40)
+			:width 80%
 		p 
 			:color white
 			:font-family $Gotham-font
@@ -302,6 +307,7 @@ nav
 			+display-for(md sm xs)
 				:padding 20px
 				:display block
+				:color white
 		a:hover 
 			:color $red
 			+display-for(md sm xs)

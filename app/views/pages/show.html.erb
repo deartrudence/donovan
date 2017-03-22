@@ -247,6 +247,33 @@
  		$(slide).toggle({direction: 'left'}, 50)
  		$(other).toggle({direction: 'left'}, 50)
 	})
+
+	// Responsive Menu
+	$('.main--toggle').on('click', function(e){
+		e.preventDefault()
+		$(this).toggleClass('active');
+		$('.menu--main').slideToggle('normal')
+		$('.menu--main').hasClass('.active') ? $('.menu--main').removeClass('.active') : $('.menu--main').addClass('.active')
+	});
+
+	function mainMenuSmall(){
+		if(windowSize <= 959 ){
+			$('.menu--main').hasClass('.active') ? null : $('.menu--main').css('display', 'none')
+		}else{
+			$('.menu--main').css('display', 'flex').addClass('active')
+		}
+	}
+
+	var theWidth = $(window).width();
+	$(window).smartresize(function(){
+		if($(this).width() != theWidth){
+			windowSize = $(window).innerWidth()
+			mainMenuSmall()
+			theWidth = $(this).width()
+		}
+	});
+
+	mainMenuSmall()
 </script>
 
 
