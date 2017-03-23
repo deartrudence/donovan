@@ -13,7 +13,9 @@ gem 'instagram'
 gem 'twitter'
 gem 'rails_autolink'
 gem 'rinku'
+
 gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk'
 
 gem "autoprefixer-rails"
 

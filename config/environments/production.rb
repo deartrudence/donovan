@@ -27,6 +27,13 @@ Rails.application.configure do
 
   config.serve_static_assets = true
 
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_region => 'us-east-1',
+    :bucket => 'donovanbailey'
+  }
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
