@@ -285,12 +285,19 @@ nav
 		:padding 0
 		:margin 0
 		:justify-content flex-end
+		.book-donovan-nav
+			:display none
+			+display-for(md sm xs)
+				:display block
+		.social-nav-items
+			+display-for(md sm xs)
+				:display none
 		+display-for(md sm xs)
 			:position absolute
 			:background $blue
 			:top 55px
 			:margin 0
-			:padding 40px 0 20px
+			:padding 10px 0 20px
 			:width 100% !important
 			:left 0
 			:z-index 1
@@ -308,7 +315,7 @@ nav
 			:text-transform uppercase
 			:letter-spacing 0.8px
 			+display-for(md sm xs)
-				:padding 20px
+				:padding 10px
 				:display block
 				:color white
 		a:hover 
@@ -484,7 +491,7 @@ section#donovan
 		:width 70%
 		:text-align center
 	.top 
-		:top 50px
+		:top 90px
 		+display-for(xs sm)
 			:top 5%
 			:transform translateX(-50%)
@@ -505,6 +512,14 @@ section#donovan
 				:color #333
 
 section#athlete-story
+	h2 
+		:text-align center
+		:font-weight bold
+		:color $blue
+		:font-style italic
+		:text-transform uppercase
+		:font-family $BodonBold-font 
+		:padding-top 20px
 	.wrapper--flex
 		:align-items stretch
 		&:nth-of-type(2n)
@@ -531,6 +546,9 @@ section#athlete-story
 
 
 section#foundation, #bailey-inc
+	.foundation-image 
+		:height 65vh
+		:object-fit cover
 	h2 
 		:text-align center
 		:font-weight bold
@@ -556,8 +574,8 @@ section#foundation, #bailey-inc
 			:text-transform uppercase
 			:font-weight bold
 		li 
-			:list-style none
-				:margin 20px
+			// :list-style none
+			:margin-top 20px
 #bailey-inc 
 	p 
 		:padding-bottom 0
@@ -700,7 +718,7 @@ section#social
 				:visibility visible
 		i 
 			:position absolute
-			:top 65%
+			:top 75%
 			:left 50%
 			:transform translateX(-50%)
 			:color $blue
@@ -712,6 +730,8 @@ section#social
 			:font-size 18px
 			:visibility hidden
 			:transition 0.3s
+			+display-for(sm md xs)
+				:visibility visible
 			&:hover
 				:color $red
 	.wrapper--flex.tweet-flex
@@ -734,9 +754,12 @@ section#social
 			i
 				:visibility visible
 	.tweet
+		.each-tweet
+			a 
+				:display block
 		a
 			:position absolute
-			:top 70%
+			:top 80%
 			:left 50%
 			:transform translateX(-50%)
 			i 
@@ -749,6 +772,8 @@ section#social
 				:font-size 18px
 				:visibility hidden
 				:transition 0.3s
+				+display-for(sm md xs)
+					:visibility visible
 				&:hover
 					:color $red
 
@@ -800,6 +825,8 @@ footer
 	:background-size cover
 	:color white
 	:padding 150px 0
+	.wrapper--flex
+		:align-items flex-start
 	.col--two
 		:padding 0 7%	
 	h3 
@@ -814,12 +841,18 @@ footer
 			:color white
 	.contact 
 		:justify-content flex-start
+		p, .address-icon 
+			+display-for(xs sm md)
+				:width 100%
 	.fa-phone, .fa-envelope
 		:font-size 3rem
 		:margin-right 15px
 	.address
 		p 
 			:margin 0
+		+display-for(xs sm md)
+			:margin-top 10px
+
 
 	#general-inquiry
 		input, textarea 

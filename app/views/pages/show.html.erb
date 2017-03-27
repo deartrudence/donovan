@@ -14,9 +14,10 @@
 				<li><a href="#athlete-story">Athlete Story</a></li>
 				<li><a href="#bailey-inc">Bailey Inc.</a></li>
 				<li><a href="#footer">Contact</a></li>
-				<li><a href="https://twitter.com/donovanbailey" target="_blank"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				<li><a class="book-donovan-nav" href="#bailey-inc-form">Book Donovan</a></li>
+				<li><a class="social-nav-items" href="https://twitter.com/donovanbailey" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a class="social-nav-items" href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a class="social-nav-items" href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div>		
 			<a href="#bailey-inc-form">
@@ -38,11 +39,9 @@
 		<div class="lower-nav">
 			<div class="lower-nav--content wrapper--flex ">
 				<a href="#foundation"><p>His foundation</p></a>
-				<a href="#donovan" >
 					<div class="red-half-circle">
 						<p>Donovan Bailey</p>
 					</div>
-				</a>
 				<a href="#social"><p>Follow Donovan</p></a>
 			</div>
 		</div>
@@ -63,6 +62,7 @@
 
 
 <section id="athlete-story">
+	<h2>Athlete Story</h2>
 		<% @page.athlete_stories.each do |athlete_story| %>
 	<div class="wrapper wrapper--flex">
 				<div class="col--two">
@@ -78,7 +78,7 @@
 <section id="foundation">
 	<div class="wrapper">
 
-		<%= image_tag @page.foundation_image.url %>
+		<%= image_tag @page.foundation_image.url, class:"foundation-image" %>
 
 		<h2>The Donovan Bailey Foundation</h2>
 		<p>Giving is a reflection of Donovan Baiey's values; that were instilled in him by his parents.  He has always believed that helping others improves your self-worth.  Getting involved with charitable organizations within your community and around the world untimately is good for everyone.</p>
@@ -161,7 +161,7 @@
 				<% if index.modulo(2).zero? %>
 					<% if social.present? %>
 						<div class="tweet">
-							<p ><%= Rinku.auto_link(social.text, :all, 'target="_blank"').html_safe %></p>
+							<p class='each-tweet' ><%= Rinku.auto_link(social.text, :all, 'target="_blank"').html_safe %></p>
 							<a href="<%= social.url %>" target="_blank"><i class="fa fa-twitter"></i></a>
 						</div>
 					<% end %>
@@ -225,6 +225,7 @@
 	$('a[href*="#"]:not([href="#"])').click(function() {
 	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	    var target = $(this.hash);
+	    console.log(target.selector)
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	    if (target.length) {
 	      $('html, body').animate({
@@ -234,6 +235,12 @@
 	    }
 	  }
 	});
+
+	$('.red-half-circle').on('click', function(){
+		$('html, body').animate({
+			scrollTop: $('#donovan').offset().top - 90
+		}, 1000)
+	})
 
 	// Scroll to top from logo
 	$('.logo').on('click', function(){
@@ -257,6 +264,32 @@
  		$(other).toggle({direction: 'left'}, 50)
 	})
 
+	//smartresize function (to deal with window maximize button and resize)
+	// (function($,sr){
+	//   var debounce = function (func, threshold, execAsap) {
+	//       var timeout;
+
+	//       return function debounced () {
+	//           var obj = this, args = arguments;
+	//           function delayed () {
+	//               if (!execAsap)
+	//                   func.apply(obj, args);
+	//               timeout = null;
+	//           };
+
+	//           if (timeout)
+	//               clearTimeout(timeout);
+	//           else if (execAsap)
+	//               func.apply(obj, args);
+
+	//           timeout = setTimeout(delayed, threshold || 100);
+	//       };
+	//   }
+	//   // smartresize 
+	//   jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+	// })(jQuery,'smartresize');
+
 	// Responsive Menu
 	$('.main--toggle').on('click', function(e){
 		e.preventDefault()
@@ -272,6 +305,8 @@
 			$('.menu--main').css('display', 'flex').addClass('active')
 		}
 	}
+
+
 
 	var theWidth = $(window).width();
 	$(window).smartresize(function(){
