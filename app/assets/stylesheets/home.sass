@@ -153,6 +153,7 @@ input[type=submit]
 	:text-transform uppercase
 	:font-weight bold
 	:float right
+	:border-radius 0
 	&:hover
 		:background-color white		
 		:color $red
@@ -570,6 +571,8 @@ section#foundation, #bailey-inc
 		:margin 0 auto
 		.col--two
 			:padding 4rem
+			+display-for(sm xs)
+				:padding 2rem
 		h4
 			:color $blue
 			:text-transform uppercase
