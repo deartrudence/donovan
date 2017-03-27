@@ -17,8 +17,6 @@
 				<li><a class="book-donovan-nav" href="#bailey-inc-form">Book Donovan</a></li>
 				<li><a class="social-nav-items" href="https://twitter.com/donovanbailey" target="_blank"><i class="fa fa-twitter"></i></a></li>
 				<li><a class="social-nav-items" href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="fb://donovanbaileyofficial/" class="small-screen">Clicky</a></li>
-				<li><a href="instagram://user?username=mrdonovanbailey">insta</a></li>
 				<li><a class="social-nav-items" href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 			</ul>
 		</div>		
@@ -124,12 +122,13 @@
 		<p>Donovan's physical dominance, mental brilliance and impenertrable drive have helped him achieve success in all of his endeavors, making his appearances highly sought-after globally.</p>
 		<p>Whether it is a workshop, a roundtable discussion, a 'meet and greet', or a golf game.  Donovan approaches all bookings with the same focus and discipline that brought him to greatness on the track.</p>
 		<h4>Please provide your contact details</h4>
-		<div class="bailey-form clearfix">
-			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true) do %>
+		<h4 class="more-info">Please provide missing details (name, email, and phone number)</h4>
+		<div class="bailey-form">
+			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true, class: "bailey-form-fields") do %>
 				<div class="first">
-					<%= text_field_tag :name, nil, placeholder: 'Full Name' %>
-					<%= text_field_tag :email, nil, placeholder: 'Email' %>
-					<%= text_field_tag :number , nil, placeholder: 'Phone Number' %>
+					<%= text_field_tag :name, nil, placeholder: 'Full Name', class:"required" %>
+					<%= text_field_tag :email, nil, placeholder: 'Email' , class:"required" %>
+					<%= text_field_tag :number , nil, placeholder: 'Phone Number', class:"required" %>
 					<%= text_field_tag :company, nil, placeholder: 'Company/Agency' %>
 				</div>
 				<div class="second">
@@ -140,8 +139,12 @@
 				<div class="dots">
 					<span data-panel="first" data-other="second">&#9679;</span><span data-panel="second" data-other="first">&#9679;</span>
 				</div>
-				<%= submit_tag 'submit' %>
+				<%= submit_tag 'submit', class:'bailey-inc-submit' %>
 			<% end %>
+				<button class="next" data-panel="second" data-other="first">Next</button>
+		</div>
+		<div class="bailey-thank-you">
+			<h2>Thank you. Your request has been submitted successfully.</h2>
 		</div>
 	</div>
 </section>
@@ -251,14 +254,57 @@
 		}, 1000)
 	})
 
+	//Bailey Form Submit
+	$('.bailey-inc-submit').hide()
+	$('.bailey-thank-you').hide()
+	$('.more-info').hide()
+
+
+	$('.bailey-form-fields').on('submit', function(e){
+		e.preventDefault();
+			$('form.bailey-form-fields').trigger('submit.rails');
+			$('.bailey-form').hide()
+			$('.bailey-thank-you').show()
+		
+	})
+
 	// Bailey Form show/hide
 	$('.bailey-form .second').hide();
+
+
+	$('button.next').on('click', function(e){
+			var form_ok = true
+			$('.required').each(function(index, field){
+				if(field.value == ""){
+					form_ok = false
+					console.log(field.value)
+				}
+			})
+			if(form_ok){
+				$('.dots span').removeClass('active')
+				$('button.next').hide();
+				$('.more-info').hide()
+				$('.bailey-inc-submit').show()
+
+				$('[data-panel='+$(this).data("panel")+']').addClass('active')
+
+				slide = "." +$(this).data('panel')
+				other = "." + $(this).data('other')
+		 		$(slide).toggle({direction: 'left'}, 50)
+		 		$(other).toggle({direction: 'left'}, 50)
+		 	} else {
+		 		$('.more-info').show()
+		 	}
+	})
+
+
 	$('.bailey-form .dots [data-panel=first]').addClass('active');
 
 	$('.dots span').on('click', function(){
 		$('.dots span').removeClass('active')
 
 		$('[data-panel='+$(this).data("panel")+']').addClass('active')
+		$('button.next').removeClass('active')
 
 		slide = "." +$(this).data('panel')
 		other = "." + $(this).data('other')
@@ -266,31 +312,7 @@
  		$(other).toggle({direction: 'left'}, 50)
 	})
 
-	//smartresize function (to deal with window maximize button and resize)
-	// (function($,sr){
-	//   var debounce = function (func, threshold, execAsap) {
-	//       var timeout;
 
-	//       return function debounced () {
-	//           var obj = this, args = arguments;
-	//           function delayed () {
-	//               if (!execAsap)
-	//                   func.apply(obj, args);
-	//               timeout = null;
-	//           };
-
-	//           if (timeout)
-	//               clearTimeout(timeout);
-	//           else if (execAsap)
-	//               func.apply(obj, args);
-
-	//           timeout = setTimeout(delayed, threshold || 100);
-	//       };
-	//   }
-	//   // smartresize 
-	//   jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
-
-	// })(jQuery,'smartresize');
 
 	// Responsive Menu
 	$('.main--toggle').on('click', function(e){
@@ -307,7 +329,6 @@
 			$('.menu--main').css('display', 'flex').addClass('active')
 		}
 	}
-
 
 
 	var theWidth = $(window).width();
