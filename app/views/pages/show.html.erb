@@ -265,6 +265,9 @@
 			$('form.bailey-form-fields').trigger('submit.rails');
 			$('.bailey-form').hide()
 			$('.bailey-thank-you').show()
+			$('html, body').animate({
+				scrollTop: $('.bailey-thank-you').offset().top - 180
+			}, 500)
 		
 	})
 
