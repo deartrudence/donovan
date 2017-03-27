@@ -1,9 +1,9 @@
-<nav>
+<nav id='nav'>
 <div class="wrapper--flex">
 	<div class="title">
 	</div>
 		<div class="wrapper wrapper--flex">
-			<a href="#header" class="logo">
+			<a class="logo">
 				<p>Donovan Bailey</p>
 			</a>
 			<a href="#" class="main--toggle">
@@ -38,9 +38,11 @@
 		<div class="lower-nav">
 			<div class="lower-nav--content wrapper--flex ">
 				<a href="#foundation"><p>His foundation</p></a>
-				<div class="red-half-circle">
-					<p>Donovan Bailey</p>
-				</div>
+				<a href="#donovan" >
+					<div class="red-half-circle">
+						<p>Donovan Bailey</p>
+					</div>
+				</a>
 				<a href="#social"><p>Follow Donovan</p></a>
 			</div>
 		</div>
@@ -232,6 +234,13 @@
 	    }
 	  }
 	});
+
+	// Scroll to top from logo
+	$('.logo').on('click', function(){
+		$('html, body').animate({
+			scrollTop: 0
+		}, 1000)
+	})
 
 	// Bailey Form show/hide
 	$('.bailey-form .second').hide();
