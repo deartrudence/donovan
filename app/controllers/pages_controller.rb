@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, :except => [:show]
+  before_action :authenticate_user!, :except => [:show, :general_inquiry, :bailey_inc_inquiry]
 
   # GET /pages/1
   # GET /pages/1.json
