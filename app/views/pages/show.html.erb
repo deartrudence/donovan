@@ -124,7 +124,7 @@
 		<h4>Please provide your contact details</h4>
 		<h4 class="more-info">Please provide missing details (name, email, and phone number)</h4>
 		<div class="bailey-form">
-			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true, class: "bailey-form-fields") do %>
+			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true, remote: true, class: "bailey-form-fields") do %>
 				<div class="first">
 					<%= text_field_tag :name, nil, placeholder: 'Full Name', class:"required" %>
 					<%= text_field_tag :email, nil, placeholder: 'Email' , class:"required" %>
@@ -214,7 +214,8 @@
 		</div>
 		<div class="col--two">
 			<h3>General Inquiry Form</h3>
-			<%= form_tag(general_inquiry_path, method: 'post', multipart: true, id: 'general-inquiry' ) do %>
+			<h4 class="inquiry-thank-you">Thank you, your inquiry has been submitted</h4>
+			<%= form_tag(general_inquiry_path, method: 'post', multipart: true, remote:true, id: 'general-inquiry' ) do %>
 				<%= text_field_tag :name, nil, :placeholder => "Full Name" %>
 				<%= text_field_tag :email, nil, :placeholder => "Email" %>
 				<%= text_field_tag :number, nil, :placeholder => "Phone Number" %>
@@ -252,6 +253,16 @@
 		$('html, body').animate({
 			scrollTop: 0
 		}, 1000)
+	})
+
+	$('.inquiry-thank-you').hide()
+	//General Inquiry Submit
+	$('#general-inquiry').on('submit', function(e){
+		e.preventDefault()
+		$('.inquiry-thank-you').show()
+		$('html, body').animate({
+			scrollTop: $('.inquiry-thank-you').offset().top - 180
+		}, 500)
 	})
 
 	//Bailey Form Submit

@@ -1,0 +1,6031 @@
+@charset "UTF-8";
+/* line 1, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin {
+  img: width 100px;
+}
+/* line 5, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .field img {
+  max-width: 25%;
+}
+/* line 8, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .field:hover {
+  background-color: #f9f9f9;
+}
+/* line 12, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .athlete-story-form {
+  border-bottom: 3px solid #242424;
+  margin-bottom: 40px;
+}
+/* line 15, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .athlete-story-form .athlete-img {
+  max-width: 80%;
+}
+/* line 20, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .danger {
+  color: red;
+}
+/* line 23, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin h1, .admin h2 {
+  text-align: center;
+  border-bottom: 3px solid #242424;
+}
+/* line 27, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .uat-logo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ccc;
+  position: fixed;
+  bottom: 30px;
+  left: 65px;
+}
+/* line 35, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin input[type='submit'] {
+  font-size: 20px;
+  color: #78D18B;
+  border: 2px solid #78D18B;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 43, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin input[type='submit']:hover {
+  background-color: #78D18B;
+  color: white;
+}
+/* line 48, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 7px;
+}
+/* line 53, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .fa {
+  font-size: 24px;
+  padding: 10px;
+  cursor: move;
+}
+/* line 58, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .move-icon {
+  cursor: move;
+}
+/* line 61, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .move {
+  cursor: move;
+}
+/* line 64, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .page-heading {
+  background-color: #78D18B;
+  padding: 20px;
+}
+/* line 68, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .category-heading {
+  background-color: #242424;
+  padding: 10px;
+  color: white;
+}
+/* line 73, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 77, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 81, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 85, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 91, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 101, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 106, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 110, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin html {
+  box-sizing: border-box;
+}
+/* line 114, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin *,
+.admin *:before,
+.admin *:after {
+  box-sizing: inherit;
+}
+/* line 120, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin body {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 126, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 1146px;
+  }
+  /* line 129, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 136, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 936px;
+  }
+  /* line 139, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 146, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 744px;
+  }
+  /* line 149, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 156, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 480px;
+  }
+  /* line 159, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 166, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+/* line 173, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 179, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 185, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 191, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 197, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 203, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 209, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+}
+/* line 227, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content {
+  display: none;
+}
+/* line 231, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content.current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 238, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--secondary {
+  background: white;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 257, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li {
+  height: 100px;
+  background: lightgrey;
+  box-sizing: border-box;
+  width: 22.5%;
+}
+/* line 264, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li:nth-of-type(2n+1) {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin img {
+  max-width: 100%;
+}
+/* line 272, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 276, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 280, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 284, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 290, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 300, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 305, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 309, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #242424;
+}
+/* line 314, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin h1,
+.admin h2,
+.admin h3 {
+  font-weight: 400;
+}
+/* line 320, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin h1 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 499px) {
+  /* line 326, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin h1 {
+    font-size: 40px;
+  }
+}
+/* line 331, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin h2 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 499px) {
+  /* line 337, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin h2 {
+    font-size: 32px;
+  }
+}
+/* line 342, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin h3 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+/* line 347, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* line 352, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin p.small,
+.admin a.small {
+  font-size: 13px;
+}
+/* line 357, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .bold {
+  font-weight: 700;
+}
+/* line 361, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .italic {
+  font-style: italic;
+}
+/* line 365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .center {
+  text-align: center;
+}
+/* line 369, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin a {
+  color: #242424;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 375, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin a:hover {
+  background: transparent;
+  text-decoration: none !important;
+  color: #3e3e3e;
+}
+/* line 381, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #typography h1,
+.admin #typography h2,
+.admin #typography h3,
+.admin #typography h4,
+.admin #typography h5,
+.admin #typography h6,
+.admin #typography p {
+  margin-top: 0;
+}
+/* line 391, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 395, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 399, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 403, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 409, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 419, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 424, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 428, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #242424;
+  border: 1px solid #242424;
+  background: transparent;
+  -webkit-transition: background-color 0.3s, opacity 0.3s;
+  transition: background-color 0.3s, opacity 0.3s;
+  margin-bottom: 16px;
+}
+/* line 442, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--primary {
+  font-size: 10px;
+  text-transform: uppercase;
+  border: 2px solid #242424;
+  border-radius: 3px;
+  padding: 5px 14px;
+  line-height: 15px;
+  background: white;
+}
+/* line 452, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--secondary {
+  border: 2px solid #242424;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  font-size: 16px;
+  min-width: 120px;
+  letter-spacing: 1.2px;
+}
+/* line 462, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--secondary:hover,
+.admin .button--primary:hover {
+  border: 2px solid #3e3e3e;
+}
+/* line 467, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--edit {
+  background: lightblue;
+  border: 2px solid lightblue;
+  color: #242424;
+  margin-right: 12px;
+}
+/* line 474, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--edit:hover {
+  background: #c1e1ec;
+  border: 2px solid #c1e1ec;
+}
+/* line 479, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--delete {
+  background: lightcoral;
+  border: 2px solid lightcoral;
+  color: white;
+}
+/* line 485, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--delete:hover {
+  color: white;
+  background: #f39797;
+  border: 2px solid #f39797;
+}
+/* line 491, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--tertiary {
+  background: #78D18B;
+  color: white;
+  text-transform: uppercase;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #78D18B;
+  font-weight: normal;
+  min-width: 190px;
+}
+/* line 503, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .button--large {
+  width: 190px;
+}
+/* line 507, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .remove_fields {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #242424;
+  border: 1px solid #242424;
+  background: transparent;
+  -webkit-transition: background-color 0.3s, opacity 0.3s;
+  transition: background-color 0.3s, opacity 0.3s;
+  margin-bottom: 16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border: 2px solid #242424;
+  border-radius: 3px;
+  padding: 5px 14px;
+  line-height: 15px;
+  background: white;
+  background: lightcoral;
+  border: 2px solid lightcoral;
+  color: white;
+}
+/* line 531, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .remove_fields:hover {
+  color: white;
+  background: #f39797;
+  border: 2px solid #f39797;
+}
+/* line 537, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #buttons .button {
+  margin-bottom: 20px;
+}
+/* line 541, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 545, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 549, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 553, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 559, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 569, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 574, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 578, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin ol,
+.admin ul {
+  margin: 0 0 12px 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 585, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin ul.list li {
+  padding-left: 20px;
+  position: relative;
+}
+/* line 590, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin ul.list li:before {
+  content: '•';
+  font-size: 24px;
+  top: 0;
+  color: #78D18B;
+  position: absolute;
+  left: 0;
+  line-height: 30px;
+}
+/* line 600, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin ol.list li {
+  counter-increment: step-counter;
+  padding-left: 20px;
+  position: relative;
+}
+/* line 606, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin ol.list li:before {
+  content: counter(step-counter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #78D18B;
+}
+/* line 614, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin html {
+  box-sizing: border-box;
+}
+/* line 618, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin *,
+.admin *:before,
+.admin *:after {
+  box-sizing: inherit;
+}
+/* line 624, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin body {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 630, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 1146px;
+  }
+  /* line 633, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 640, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 936px;
+  }
+  /* line 643, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 650, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 744px;
+  }
+  /* line 653, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 660, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 480px;
+  }
+  /* line 663, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 670, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+/* line 677, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 683, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 689, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 695, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 701, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 707, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 713, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+}
+/* line 731, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content {
+  display: none;
+}
+/* line 735, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content.current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 742, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--secondary {
+  background: white;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 750, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 761, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li {
+  height: 100px;
+  background: lightgrey;
+  box-sizing: border-box;
+  width: 22.5%;
+}
+/* line 768, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li:nth-of-type(2n+1) {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 772, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin img {
+  max-width: 100%;
+}
+/* line 776, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 780, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 788, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 794, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 804, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 809, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 813, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .form--contained {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 820, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .form--contained {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 826, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .form--contained {
+    width: 90%;
+  }
+}
+/* line 831, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin select {
+  padding: 10px 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  font-size: 14px;
+  background: #d3d3d3;
+  background: url("down-arrow3.png") 96%/15% no-repeat #e5e5e5;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+/* line 846, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin input,
+.admin textarea,
+.admin fieldset {
+  width: 100%;
+  padding: 6px 4px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+/* line 857, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin textarea {
+  height: 200px;
+}
+/* line 861, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin input[type=checkbox] {
+  width: auto;
+  margin-bottom: 16px;
+}
+/* line 866, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin fieldset {
+  padding: 20px 20px 0 20px;
+}
+/* line 870, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 874, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 878, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 882, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 888, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 898, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 903, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 907, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 913, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table th {
+  text-align: left;
+  padding: 6px 0;
+}
+/* line 918, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table tr {
+  background: white;
+  border-bottom: 1.5px solid #e0e0e0;
+}
+/* line 923, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table tbody tr:hover {
+  background: #F9F9F9;
+}
+/* line 927, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table td {
+  padding: 10px 0;
+}
+/* line 931, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table img {
+  width: 50px;
+  padding: 6px 0;
+  display: block;
+}
+/* line 937, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table .table--image {
+  width: 100px;
+}
+/* line 941, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin table .table--button {
+  text-align: right;
+}
+/* line 945, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 949, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 953, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 957, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 963, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 973, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 978, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 982, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #admin--only .sidebar {
+  height: 100%;
+  position: fixed;
+}
+/* line 987, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar {
+  width: 230px;
+  background: #242424;
+  position: relative;
+}
+/* line 993, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar a,
+.admin .sidebar p,
+.admin .sidebar span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding: 16px 12px;
+  display: block;
+}
+/* line 1002, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar a:hover {
+  color: white;
+}
+/* line 1006, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar a.active {
+  background: #3e3e3e;
+  color: white;
+}
+/* line 1011, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar .sidebar--header {
+  background: #78D18B;
+  padding: 18px 12px;
+  text-transform: uppercase;
+}
+/* line 1017, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar .sidebar--header:hover {
+  background: #8bd79b;
+}
+/* line 1021, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar .sidebar--user {
+  position: absolute;
+  bottom: 12px;
+}
+/* line 1026, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .sidebar .sidebar--user a,
+.admin .sidebar .sidebar--user span {
+  padding: 6px 12px;
+}
+/* line 1031, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #admin--only .breadcrumb {
+  position: fixed;
+  margin-left: 230px;
+}
+/* line 1036, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .breadcrumb {
+  width: calc(100% - 230px);
+  padding: 18px 10px;
+  font-size: 14px;
+  background: #F9F9F9;
+  text-transform: uppercase;
+}
+/* line 1044, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .breadcrumb span {
+  color: #242424;
+  padding: 0 10px;
+}
+/* line 1049, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .breadcrumb span:after {
+  content: '>';
+  padding: 0 10px;
+}
+/* line 1054, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .breadcrumb span:last-of-type:after {
+  content: "";
+}
+/* line 1058, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .breadcrumb a {
+  padding: 0 10px;
+}
+/* line 1062, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .admin--content {
+  width: calc(100% - 230px);
+  padding: 12px;
+  padding-top: 60px;
+  margin-left: 230px;
+}
+/* line 1069, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .admin--module {
+  background: #F9F9F9;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+/* line 1077, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .admin--module p {
+  margin-top: 0;
+}
+/* line 1081, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .admin--module li {
+  margin-bottom: 4px;
+}
+/* line 1085, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin html {
+  box-sizing: border-box;
+}
+/* line 1089, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin *,
+.admin *:before,
+.admin *:after {
+  box-sizing: inherit;
+}
+/* line 1095, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin body {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 1101, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 1146px;
+  }
+  /* line 1104, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 1111, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 936px;
+  }
+  /* line 1114, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1121, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 744px;
+  }
+  /* line 1124, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1131, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 480px;
+  }
+  /* line 1134, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1141, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+/* line 1148, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 1154, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 1160, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1166, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1172, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1178, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 1184, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+}
+/* line 1202, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content {
+  display: none;
+}
+/* line 1206, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content.current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 1213, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--secondary {
+  background: white;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 1221, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 1232, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li {
+  height: 100px;
+  background: lightgrey;
+  box-sizing: border-box;
+  width: 22.5%;
+}
+/* line 1239, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li:nth-of-type(2n+1) {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 1243, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin img {
+  max-width: 100%;
+}
+/* line 1247, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .as--no-margin-bottom {
+  margin-bottom: 0;
+}
+/* line 1251, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .as--admin-index-title h1 {
+  width: calc(100% - 200px);
+}
+/* line 1255, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .as--admin-index-title h1,
+.admin .as--admin-index-title a {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 1261, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .as--half {
+  width: calc(50% - 20px);
+}
+/* line 1265, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 1269, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 1273, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 1277, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 1283, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 1293, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 1298, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 1302, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin html {
+  box-sizing: border-box;
+}
+/* line 1306, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin *,
+.admin *:before,
+.admin *:after {
+  box-sizing: inherit;
+}
+/* line 1312, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin body {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 1170px) {
+  /* line 1318, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 1146px;
+  }
+  /* line 1321, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 1328, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 936px;
+  }
+  /* line 1331, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1338, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 744px;
+  }
+  /* line 1341, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1348, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: 480px;
+  }
+  /* line 1351, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper:margin {
+    left: 12px;
+    right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1358, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+/* line 1365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 1371, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 1377, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1383, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1389, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1395, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 1401, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+}
+/* line 1419, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content {
+  display: none;
+}
+/* line 1423, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--flex.tab-content.current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 1430, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .wrapper--secondary {
+  background: white;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 1438, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/* line 1449, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li {
+  height: 100px;
+  background: lightgrey;
+  box-sizing: border-box;
+  width: 22.5%;
+}
+/* line 1456, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .container--style-guide li:nth-of-type(2n+1) {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 1460, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin img {
+  max-width: 100%;
+}
+/* line 1464, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main {
+  background: #1a1a1a;
+  padding: 12px 0;
+  color: white;
+  line-height: 30px;
+}
+/* line 1471, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main a {
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 10px;
+}
+/* line 1478, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .logo {
+  font-size: 20px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1483, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .logo {
+    z-index: 20;
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1490, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .logo {
+    z-index: 20;
+    display: block;
+  }
+}
+/* line 1496, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .logo a {
+  text-transform: lowercase;
+}
+/* line 1500, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .logo span {
+  font-size: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 1506, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .logo img {
+  width: 30px;
+  margin-right: 6px;
+}
+/* line 1511, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--links {
+  font-size: 12px;
+  font-weight: 100;
+}
+@media screen and (min-width: 1170px) {
+  /* line 1517, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links {
+    float: right;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 1523, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links {
+    float: right;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1529, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links {
+    float: right;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1535, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    background: #1a1a1a;
+    display: none;
+    height: 100vh;
+    padding-top: 20vh;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1548, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    background: #1a1a1a;
+    display: none;
+    height: 100vh;
+    padding-top: 20vh;
+  }
+}
+/* line 1560, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--links a {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 33px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+@media screen and (min-width: 1170px) {
+  /* line 1568, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  /* line 1571, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a:last-of-type {
+    border: none;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 1577, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  /* line 1580, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a:last-of-type {
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1586, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  /* line 1589, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a:last-of-type {
+    border: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1595, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a {
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+  }
+  /* line 1603, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1609, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a {
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+  }
+  /* line 1617, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+/* line 1622, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--links img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1630, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links img {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1636, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--links img {
+    display: none;
+  }
+}
+/* line 1641, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger {
+  position: absolute;
+  top: 18px;
+  right: 46px;
+  z-index: 20;
+}
+@media screen and (min-width: 1170px) {
+  /* line 1649, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 1655, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1661, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--main .nav--hamburger {
+    display: none;
+  }
+}
+/* line 1666, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger span,
+.admin .nav--main .nav--hamburger span:before,
+.admin .nav--main .nav--hamburger span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+/* line 1681, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger span:before {
+  top: -10px;
+}
+/* line 1685, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger span:after {
+  bottom: -10px;
+}
+/* line 1689, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger.active span {
+  background-color: transparent;
+}
+/* line 1693, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger.active span:before,
+.admin .nav--main .nav--hamburger.active span:after {
+  top: 0;
+}
+/* line 1698, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger.active span:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 1703, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .nav--main .nav--hamburger.active span:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1709, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--links.active {
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1715, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin .nav--links.active {
+    display: block;
+  }
+}
+/* line 1720, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer {
+  background: white;
+  padding: 40px;
+}
+@media screen and (max-width: 499px) {
+  /* line 1726, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--footer {
+    padding: 0;
+  }
+}
+/* line 1731, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer h3 {
+  margin-top: 0;
+}
+/* line 1735, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer .email-form {
+  width: 40%;
+  padding-left: 28px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1741, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--footer .email-form {
+    padding-left: 0;
+    padding: 20px 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1749, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--footer .email-form {
+    padding-left: 0;
+    padding: 20px 0;
+    width: 100%;
+  }
+}
+/* line 1756, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer .email-form input {
+  width: 80%;
+}
+/* line 1760, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer .email-form input[type=email] {
+  border: 1px solid #333;
+  padding: 6px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/* line 1767, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer ul {
+  width: 30%;
+}
+/* line 1771, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer ul:last-of-type {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-left: 28px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1778, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--footer ul:last-of-type {
+    padding-left: 0;
+    border-right: none;
+    border-left: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1786, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--footer ul:last-of-type {
+    padding-left: 0;
+    border-right: none;
+    border-left: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 1794, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--footer ul {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 1802, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--footer ul {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 20px 0;
+  }
+}
+/* line 1809, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer ul a,
+.admin footer.nav--footer ul input[type=submit] {
+  color: #78D18B;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* line 1816, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer ul a:hover,
+.admin footer.nav--footer ul input[type=submit]:hover {
+  color: #4d4d4d;
+}
+/* line 1821, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer ul input[type=submit] {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+/* line 1828, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--footer ul form {
+  display: inline-block;
+}
+/* line 1832, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--sponsor {
+  background: #eaefec;
+  padding: 20px 0;
+}
+/* line 1837, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--sponsor p,
+.admin footer.nav--sponsor img {
+  display: inline-block;
+}
+@media screen and (max-width: 499px) {
+  /* line 1843, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--sponsor p,
+  .admin footer.nav--sponsor img {
+    width: 100%;
+  }
+}
+/* line 1849, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--sponsor img {
+  width: 30%;
+}
+@media screen and (max-width: 499px) {
+  /* line 1854, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--sponsor img {
+    max-width: 250px;
+  }
+}
+/* line 1859, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin footer.nav--sponsor p {
+  margin-right: 10%;
+}
+@media screen and (max-width: 499px) {
+  /* line 1864, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+  .admin footer.nav--sponsor p {
+    margin-right: 0;
+  }
+}
+/* line 1869, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .text-edit h1 {
+  font-size: 20px;
+}
+/* line 1873, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .text-edit h2 {
+  font-size: 18px;
+}
+/* line 1877, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .text-edit h3 {
+  font-size: 16px;
+}
+/* line 1881, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .text-edit ul {
+  list-style: disc;
+  margin-left: 10px;
+  padding-left: 20px;
+}
+/* line 1887, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .text-edit ol {
+  list-style: decimal;
+  margin-left: 10px;
+  padding-left: 20px;
+}
+/* line 1893, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .green {
+  background: #78D18B;
+}
+/* line 1897, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .grey {
+  background: #F9F9F9;
+}
+/* line 1901, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .black {
+  background: #242424;
+}
+/* line 1905, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0.9375em;
+}
+/* line 1911, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li p {
+  position: absolute;
+  padding: 3px 13px;
+  color: #666;
+  background-color: #fff;
+  font-size: 12px;
+  bottom: 0;
+  left: 0.9375em;
+}
+/* line 1921, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li .color {
+  height: 120px;
+  margin-right: 0.9375em;
+}
+/* line 1926, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #colors li:last-child {
+  margin-right: 0;
+}
+/* line 1930, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #notice,
+.admin .alert {
+  color: #333;
+  position: absolute;
+  width: 60%;
+  max-width: 500px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  padding: 50px;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid #78D18B;
+}
+/* line 1948, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin .alert {
+  background: #e0a6a6;
+}
+/* line 1952, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #error_explanation {
+  background: rgba(178, 34, 34, 0.4);
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+/* line 1958, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #error_explanation h2 {
+  font-size: 18px;
+}
+/* line 1962, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/admin.scss */
+.admin #error_explanation ul {
+  list-style: disc;
+  padding: 20px;
+}
+/* line 5, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/* line 8, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 10, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+body {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* line 16, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 18, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1170px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 480px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 92, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/* line 99, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper .col--two, .wrapper--flex .col--two {
+  box-sizing: border-box;
+  width: 50%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 99, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 99, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 103, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper .col--four, .wrapper--flex .col--four {
+  box-sizing: border-box;
+  width: 25%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 103, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 103, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper .col--five, .wrapper--flex .col--five {
+  box-sizing: border-box;
+  width: 20%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+/* line 118, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section {
+  padding-top: 140px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 118, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section {
+    padding: 80px 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 118, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section {
+    padding: 80px 0;
+  }
+}
+
+/* line 122, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer {
+  margin-top: 140px;
+}
+
+/* line 125, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h2, h3, h4 {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+/* line 128, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h2 {
+  font-size: 4.2rem;
+  line-height: 4.4rem;
+}
+@media screen and (max-width: 499px) {
+  /* line 128, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  h2 {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+}
+
+/* line 134, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+@media screen and (max-width: 499px) {
+  /* line 134, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* line 140, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h4 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+/* line 143, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+p {
+  color: #777;
+}
+
+/* line 145, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+a {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+/* line 148, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+input[type=submit], button.next {
+  -webkit-appearance: none;
+  background-color: #E83A3B;
+  border: 1px;
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  border-radius: 0;
+}
+/* line 158, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+input[type=submit]:hover, button.next:hover {
+  background-color: white;
+  color: #E83A3B;
+}
+
+/* line 161, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.text-primary, .text-secondary {
+  letter-spacing: 0.4;
+  line-height: 3.2rem;
+  font-size: 1.85rem;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* line 168, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.text-primary {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-style: italic;
+}
+
+/* line 171, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h2.hl {
+  color: #E0AF1D;
+  font-weight: bold;
+}
+
+/* line 175, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.button {
+  border: none;
+  padding: 10px 12px 8px 12px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+}
+
+/* line 183, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.button--primary {
+  border: 2px solid #E0AF1D;
+  background: #E0AF1D;
+  color: white;
+}
+
+/* line 187, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.button--primary:hover {
+  background: white;
+  color: #E0AF1D;
+}
+
+/* line 191, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.devise {
+  min-height: 100vh;
+}
+/* line 193, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.devise .login {
+  margin: auto auto;
+}
+/* line 195, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.devise input {
+  padding: 10px;
+  border: 1px solid #333;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 203, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav {
+  background: white;
+  padding: 12px 0;
+  position: fixed;
+  box-shadow: 3px 2px 11px 0px rgba(0, 0, 0, 0.3);
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+/* line 211, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .fa {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  background-color: #025371;
+  color: white;
+  font-size: 16px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 2px solid #025371;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 223, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .fa:hover {
+  color: #025371;
+  background-color: white;
+}
+/* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .blue-half-circle {
+  background-color: #025371;
+  min-height: 80px;
+  width: 160px;
+  border-radius: 0 0 300px 300px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 499px) {
+  /* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .blue-half-circle {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .blue-half-circle {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .blue-half-circle {
+    display: none;
+  }
+}
+/* line 239, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .blue-half-circle p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 16px;
+  color: white;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+/* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 40px;
+  background-color: #E83A3B;
+  width: 30%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .title {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .title {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .title {
+    width: 70%;
+  }
+}
+/* line 257, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .title:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  border-left: 40px solid #E83A3B;
+  border-bottom: 40px solid white;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 263, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 263, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 263, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+/* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .menu--main {
+  box-sizing: border-box;
+  width: 60%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+  }
+}
+/* line 274, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav a.logo {
+  box-sizing: border-box;
+  width: 40%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 274, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav a.logo {
+    box-sizing: border-box;
+    width: 100%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 274, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav a.logo {
+    box-sizing: border-box;
+    width: 100%;
+    width: 80%;
+  }
+}
+/* line 279, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav a.logo p {
+  color: white;
+  font-family: "GothamBold", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul .book-donovan-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .book-donovan-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .book-donovan-nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .book-donovan-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 295, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .social-nav-items {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 295, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .social-nav-items {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 295, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .social-nav-items {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: #025371;
+    top: 55px;
+    margin: 0;
+    padding: 10px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: #025371;
+    top: 55px;
+    margin: 0;
+    padding: 10px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: #025371;
+    top: 55px;
+    margin: 0;
+    padding: 10px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul li {
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul a {
+  text-decoration: none;
+  color: #025371;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+}
+/* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul a:hover {
+  color: #E83A3B;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #E83A3B;
+    color: white;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #E83A3B;
+    color: white;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #E83A3B;
+    color: white;
+  }
+}
+/* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .main--toggle {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 337, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    -webkit-transform: translate3d(0, -1px, 0);
+            transform: translate3d(0, -1px, 0);
+  }
+  /* line 339, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    -webkit-transform: translate3d(0, 1px, 0);
+            transform: translate3d(0, 1px, 0);
+  }
+  /* line 341, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #025371;
+    display: block;
+    margin-top: 6px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 350, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 337, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    -webkit-transform: translate3d(0, -1px, 0);
+            transform: translate3d(0, -1px, 0);
+  }
+  /* line 339, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    -webkit-transform: translate3d(0, 1px, 0);
+            transform: translate3d(0, 1px, 0);
+  }
+  /* line 341, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #025371;
+    display: block;
+    margin-top: 6px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 350, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 337, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    -webkit-transform: translate3d(0, -1px, 0);
+            transform: translate3d(0, -1px, 0);
+  }
+  /* line 339, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    -webkit-transform: translate3d(0, 1px, 0);
+            transform: translate3d(0, 1px, 0);
+  }
+  /* line 341, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #025371;
+    display: block;
+    margin-top: 6px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 350, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 357, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 360, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 369, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+            transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 357, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 360, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 369, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+            transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 357, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 360, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 369, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+            transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+
+/* line 375, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header {
+  background-size: cover;
+  color: white;
+  height: calc(100vh - 90px);
+  position: relative;
+  margin-top: 90px;
+}
+/* line 383, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+  font-family: "GothamBold", sans-serif;
+}
+@media screen and (max-width: 499px) {
+  /* line 383, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header h2 {
+    margin-right: 10px;
+  }
+}
+/* line 393, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .background-image {
+  height: 100%;
+  background-size: cover;
+}
+@media screen and (max-width: 499px) {
+  /* line 393, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .background-image {
+    background-position: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 393, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .background-image {
+    background-position: center;
+  }
+}
+/* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav {
+  color: white;
+  background-color: #025371;
+}
+/* line 402, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav a p {
+  color: white;
+  font-weight: bold;
+}
+/* line 406, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav a:hover p {
+  color: #c3c3c3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 499px) {
+  /* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .lower-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .lower-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .lower-nav {
+    display: none;
+  }
+}
+/* line 411, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav--content {
+  max-width: 50%;
+  margin: auto auto;
+  text-transform: uppercase;
+  position: relative;
+}
+/* line 416, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav--content .red-half-circle {
+  background-color: #E83A3B;
+  min-height: 80px;
+  font-weight: bold;
+  width: 160px;
+  border-top: none;
+  border-radius: 300px 300px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  box-shadow: 0px -3px 11px 1px rgba(0, 0, 0, 0.4);
+}
+/* line 428, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav--content .red-half-circle p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 1.3;
+  color: white;
+}
+/* line 435, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .arrow {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+/* line 440, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .arrow img {
+  width: 50px;
+}
+/* line 443, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .header--wrapper {
+  height: calc(100% - 56px);
+  max-width: 60%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 443, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .header--wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 443, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .header--wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+/* line 455, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .wrapper .header--text {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 455, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text {
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 455, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text {
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 464, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text h2 {
+    margin: 0 auto;
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 464, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text h2 {
+    margin: 0 auto;
+    font-size: 2.8rem;
+  }
+}
+
+/* line 470, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan {
+  padding: 0;
+  color: white;
+  position: relative;
+  height: calc(100vh - 90px);
+}
+@media screen and (max-width: 499px) {
+  /* line 470, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 470, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan {
+    height: 100%;
+  }
+}
+/* line 477, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .background-image {
+  height: 80vh;
+  background-size: cover;
+}
+/* line 480, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan h2 {
+  margin: 0;
+  font-family: "BodonItal", sans-serif;
+  font-size: 3rem;
+}
+/* line 484, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan p {
+  font-family: "BodonItal", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+}
+/* line 488, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/* line 490, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .top, section#donovan .bottom {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  text-align: center;
+}
+/* line 496, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .top {
+  top: 90px;
+}
+@media screen and (max-width: 499px) {
+  /* line 496, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top {
+    top: 5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 496, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top {
+    top: 5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 502, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 502, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+/* line 506, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .bottom {
+  bottom: 50px;
+  width: 50%;
+}
+@media screen and (max-width: 499px) {
+  /* line 506, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom {
+    position: initial;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 80%;
+    margin: auto;
+  }
+  /* line 514, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom p {
+    color: #333;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 506, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom {
+    position: initial;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 80%;
+    margin: auto;
+  }
+  /* line 514, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom p {
+    color: #333;
+  }
+}
+
+/* line 518, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #025371;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: "BodonBold", sans-serif;
+  padding-top: 20px;
+}
+/* line 526, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/* line 528, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex:nth-of-type(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+/* line 530, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex:nth-of-type(2n+1) {
+  background-color: #E83A3B;
+}
+/* line 532, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex:nth-of-type(2n) {
+  background-color: #025371;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 526, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .wrapper--flex {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 526, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .wrapper--flex {
+    padding: 0;
+  }
+}
+/* line 536, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .col--two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+/* line 539, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .col--two p {
+  width: 70%;
+  margin: auto auto;
+  color: white;
+}
+/* line 543, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .col--two img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 547, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .col--two:nth-of-type(2n) {
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 547, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .col--two:nth-of-type(2n) {
+    min-height: 250px;
+  }
+}
+
+/* line 552, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .foundation-image, #bailey-inc .foundation-image {
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/* line 555, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation h2, #bailey-inc h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #025371;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: "BodonBold", sans-serif;
+}
+/* line 562, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation p, #bailey-inc p {
+  width: 55%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 562, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation p, #bailey-inc p {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 562, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation p, #bailey-inc p {
+    width: 85%;
+  }
+}
+/* line 569, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info, #bailey-inc .info {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 75%;
+  margin: 0 auto;
+}
+/* line 573, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info .col--two, #bailey-inc .info .col--two {
+  padding: 4rem;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 573, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation .info .col--two, #bailey-inc .info .col--two {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 573, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation .info .col--two, #bailey-inc .info .col--two {
+    padding: 2rem;
+  }
+}
+/* line 577, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info h4, #bailey-inc .info h4 {
+  color: #025371;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 581, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info li, #bailey-inc .info li {
+  margin-top: 20px;
+}
+
+/* line 585, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+#bailey-inc p {
+  padding-bottom: 0;
+  width: 95%;
+  font-size: 16px;
+  color: #777;
+}
+/* line 590, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+#bailey-inc li {
+  font-size: 16px;
+  color: #777;
+}
+/* line 593, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+#bailey-inc .info {
+  width: 95%;
+}
+
+/* line 599, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form {
+  background-color: #ddd;
+  padding: 6% 12%;
+  text-align: center;
+}
+/* line 603, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form h2 {
+  font-weight: bold;
+  font-family: "BodonBold", sans-serif;
+  padding: 0 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 603, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form h2 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 603, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form h2 {
+    padding: 0;
+  }
+}
+/* line 609, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form h2, section#bailey-inc-form .bailey-inc-form h4 {
+  color: #025371;
+  text-transform: uppercase;
+}
+/* line 612, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-thank-you h2 {
+  color: #E83A3B;
+}
+/* line 614, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .more-info {
+  color: #E83A3B;
+}
+/* line 616, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form p, section#bailey-inc-form .bailey-inc-form h4 {
+  padding-bottom: 20px;
+}
+/* line 618, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 618, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form .bailey-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 618, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form .bailey-form {
+    width: 100%;
+  }
+}
+/* line 624, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form input, section#bailey-inc-form .bailey-inc-form .bailey-form textarea {
+  width: 100%;
+  padding: 15px;
+  outline: 1px solid #999;
+  border: none;
+  margin-bottom: 25px;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 18px;
+}
+/* line 632, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form input[type=submit], section#bailey-inc-form .bailey-inc-form .bailey-form button.next {
+  outline: none;
+  width: 50%;
+  float: none;
+  padding: 15px;
+  font-size: 18px;
+}
+/* line 640, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form .required {
+  position: relative;
+}
+/* line 642, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form .required:before {
+  content: "*";
+  color: #E83A3B;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 648, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .dots {
+  font-size: 40px;
+  margin-bottom: 18px;
+  color: #888;
+}
+/* line 652, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .active {
+  color: #025371;
+}
+
+/* line 656, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-description {
+  text-align: center;
+}
+/* line 658, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-description h2 {
+  font-weight: bold;
+  color: #025371;
+  font-family: "BodonItal", sans-serif;
+}
+/* line 662, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-description p {
+  font-family: "BodonItal", sans-serif;
+}
+/* line 664, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons {
+  padding: 0;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/* line 669, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons li {
+  list-style: none;
+  float: left;
+  margin-right: 15px;
+}
+/* line 674, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons li:hover i {
+  color: #025371;
+  background-color: white;
+  border: 2px solid #025371;
+}
+/* line 678, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons li i {
+  color: white;
+  background-color: #025371;
+  border: 2px solid #025371;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 689, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 692, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element p {
+  color: white;
+}
+/* line 694, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:nth-of-type(2n+1) {
+  background-color: #E83A3B;
+}
+/* line 696, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:nth-of-type(4n+1) {
+  background-color: #025371;
+}
+/* line 698, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:nth-of-type(5) {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+/* line 700, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+@media screen and (max-width: 499px) {
+  /* line 705, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 707, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 709, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  /* line 711, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  /* line 713, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  /* line 715, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  /* line 717, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(7) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  /* line 719, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(8) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  /* line 721, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(9) {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  /* line 723, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(10) {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 705, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 707, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 709, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  /* line 711, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  /* line 713, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  /* line 715, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  /* line 717, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(7) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  /* line 719, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(8) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  /* line 721, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(9) {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  /* line 723, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(10) {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 725, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element.col--four {
+    width: 50% !important;
+  }
+}
+/* line 728, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 736, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram:hover i {
+  visibility: visible;
+}
+/* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram i {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #025371;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .instagram i {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .instagram i {
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .instagram i {
+    visibility: visible;
+  }
+}
+/* line 754, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram i:hover {
+  color: #E83A3B;
+}
+/* line 756, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .wrapper--flex.tweet-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 758, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  padding: 0 20px;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  height: 80%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 16px;
+}
+/* line 773, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet:hover i {
+  visibility: visible;
+}
+/* line 777, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet .each-tweet a {
+  display: block;
+}
+/* line 779, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a i {
+  color: #025371;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet a i {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet a i {
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet a i {
+    visibility: visible;
+  }
+}
+/* line 796, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a i:hover {
+  color: #E83A3B;
+}
+/* line 802, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a {
+  color: white;
+  font-weight: bold;
+  word-break: break-all;
+  display: inline-block;
+}
+/* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 18px;
+  margin: auto;
+}
+/* line 812, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet p a {
+  position: relative;
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+}
+/* line 830, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .square {
+  position: relative;
+  border: 2px solid black;
+}
+/* line 834, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* line 842, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer {
+  background-image: url(/assets/footer-0019f8b292dbeef902f103d39eb73b0f644ce6e780204aa374bac7f6df36b562.png);
+  background-size: cover;
+  color: white;
+  padding: 150px 0;
+}
+/* line 847, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .wrapper--flex {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/* line 849, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .col--two {
+  padding: 0 7%;
+}
+/* line 851, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* line 854, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer p {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: white;
+}
+/* line 859, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer p a {
+  color: white;
+}
+/* line 861, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .contact {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media screen and (max-width: 499px) {
+  /* line 863, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .contact p, footer .contact .address-icon {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 863, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .contact p, footer .contact .address-icon {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 863, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .contact p, footer .contact .address-icon {
+    width: 100%;
+  }
+}
+/* line 866, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .fa-phone, footer .fa-envelope {
+  font-size: 3rem;
+  margin-right: 15px;
+}
+/* line 870, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .address p {
+  margin: 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 869, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .address {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 869, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .address {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 869, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .address {
+    margin-top: 10px;
+  }
+}
+/* line 875, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .inquiry-thank-you {
+  color: #E83A3B;
+}
+/* line 878, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer #general-inquiry input, footer #general-inquiry textarea {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  margin-bottom: 20px;
+}
+/* line 883, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer #general-inquiry input[type=submit] {
+  width: 40%;
+  font-size: 1.5rem;
+}
+/* line 886, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons {
+  padding: 0;
+}
+/* line 888, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons li {
+  list-style: none;
+  float: left;
+  margin-right: 15px;
+}
+/* line 893, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons li:hover i {
+  color: white;
+  background-color: #025371;
+}
+/* line 896, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons li i {
+  color: #025371;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+@font-face {
+  font-family: 'DINNextLTBold';
+  src: url("/assets/DINNextLTPro-Heavy-1ff0aac88c7e3402f5e8ac3d3d728ce2e7df0aff5313f23d5d955b75fd487f9e.otf");
+  src: url("/assets/DINNextLTPro-Heavy-1ff0aac88c7e3402f5e8ac3d3d728ce2e7df0aff5313f23d5d955b75fd487f9e.otf") format("opentype");
+}
+@font-face {
+  font-family: 'DINNextLT';
+  src: url("/assets/DINNextLTPro-Regular-f937f1c06d94d77a330556eec91017af47018edc0a157ee003403b6234285c0e.otf");
+  src: url("/assets/DINNextLTPro-Regular-f937f1c06d94d77a330556eec91017af47018edc0a157ee003403b6234285c0e.otf") format("opentype");
+}
+@font-face {
+  font-family: 'GothamBold';
+  src: url("/assets/Gotham-Bold-183be4309aa229c11d790bb79b82a6a181a3f76cd009635a145a9d65c9c80766.otf");
+  src: url("/assets/Gotham-Bold-183be4309aa229c11d790bb79b82a6a181a3f76cd009635a145a9d65c9c80766.otf") format("opentype");
+}
+@font-face {
+  font-family: 'BodonBold';
+  src: url("/assets/BauerBodoniStd-Bold-cf4be3448eb22e16fa03ddac8365029bc981d3bf0fc6899172d3b48e0ee7bab4.otf");
+  src: url("/assets/BauerBodoniStd-Bold-cf4be3448eb22e16fa03ddac8365029bc981d3bf0fc6899172d3b48e0ee7bab4.otf") format("opentype");
+}
+@font-face {
+  font-family: 'BodonItal';
+  src: url("/assets/BauerBodoniStd-BoldItalic-cd8ea308f3353a3a15e646ee1d306e1a4e882a4ab3c6243a0fc62bd01f7aad8a.otf");
+  src: url("/assets/BauerBodoniStd-BoldItalic-cd8ea308f3353a3a15e646ee1d306e1a4e882a4ab3c6243a0fc62bd01f7aad8a.otf") format("opentype");
+}
+/* line 5, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/* line 8, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 10, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+body {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* line 16, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 18, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1170px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 1146px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 936px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 744px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: 480px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 33, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+}
+@media screen and (min-width: 1170px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 83, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper {
+    margin: 0;
+    padding: 0 12px;
+  }
+}
+/* line 92, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/* line 99, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper .col--two, .wrapper--flex .col--two {
+  box-sizing: border-box;
+  width: 50%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 99, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 99, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--two, .wrapper--flex .col--two {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 103, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper .col--four, .wrapper--flex .col--four {
+  box-sizing: border-box;
+  width: 25%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 103, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 103, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--four, .wrapper--flex .col--four {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+/* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.wrapper .col--five, .wrapper--flex .col--five {
+  box-sizing: border-box;
+  width: 20%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five {
+    box-sizing: border-box;
+    width: 33.325%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 109, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  .wrapper .col--five, .wrapper--flex .col--five {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+/* line 118, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section {
+  padding-top: 140px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 118, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section {
+    padding: 80px 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 118, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section {
+    padding: 80px 0;
+  }
+}
+
+/* line 122, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer {
+  margin-top: 140px;
+}
+
+/* line 125, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h2, h3, h4 {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+/* line 128, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h2 {
+  font-size: 4.2rem;
+  line-height: 4.4rem;
+}
+@media screen and (max-width: 499px) {
+  /* line 128, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  h2 {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+}
+
+/* line 134, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+@media screen and (max-width: 499px) {
+  /* line 134, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  h3 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* line 140, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h4 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+/* line 143, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+p {
+  color: #777;
+}
+
+/* line 145, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+a {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+/* line 148, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+input[type=submit], button.next {
+  -webkit-appearance: none;
+  background-color: #E83A3B;
+  border: 1px;
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  border-radius: 0;
+}
+/* line 158, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+input[type=submit]:hover, button.next:hover {
+  background-color: white;
+  color: #E83A3B;
+}
+
+/* line 161, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.text-primary, .text-secondary {
+  letter-spacing: 0.4;
+  line-height: 3.2rem;
+  font-size: 1.85rem;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* line 168, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.text-primary {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-style: italic;
+}
+
+/* line 171, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+h2.hl {
+  color: #E0AF1D;
+  font-weight: bold;
+}
+
+/* line 175, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.button {
+  border: none;
+  padding: 10px 12px 8px 12px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+}
+
+/* line 183, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.button--primary {
+  border: 2px solid #E0AF1D;
+  background: #E0AF1D;
+  color: white;
+}
+
+/* line 187, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.button--primary:hover {
+  background: white;
+  color: #E0AF1D;
+}
+
+/* line 191, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.devise {
+  min-height: 100vh;
+}
+/* line 193, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.devise .login {
+  margin: auto auto;
+}
+/* line 195, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+.devise input {
+  padding: 10px;
+  border: 1px solid #333;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 203, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav {
+  background: white;
+  padding: 12px 0;
+  position: fixed;
+  box-shadow: 3px 2px 11px 0px rgba(0, 0, 0, 0.3);
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+/* line 211, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .fa {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  background-color: #025371;
+  color: white;
+  font-size: 16px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 2px solid #025371;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 223, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .fa:hover {
+  color: #025371;
+  background-color: white;
+}
+/* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .blue-half-circle {
+  background-color: #025371;
+  min-height: 80px;
+  width: 160px;
+  border-radius: 0 0 300px 300px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 499px) {
+  /* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .blue-half-circle {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .blue-half-circle {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 226, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .blue-half-circle {
+    display: none;
+  }
+}
+/* line 239, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .blue-half-circle p {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 16px;
+  color: white;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+/* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 40px;
+  background-color: #E83A3B;
+  width: 30%;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .title {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .title {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 246, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .title {
+    width: 70%;
+  }
+}
+/* line 257, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .title:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  border-left: 40px solid #E83A3B;
+  border-bottom: 40px solid white;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 263, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 263, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 263, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .wrapper {
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+/* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .menu--main {
+  box-sizing: border-box;
+  width: 60%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 268, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .menu--main {
+    display: none;
+  }
+}
+/* line 274, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav a.logo {
+  box-sizing: border-box;
+  width: 40%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 274, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav a.logo {
+    box-sizing: border-box;
+    width: 100%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 274, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav a.logo {
+    box-sizing: border-box;
+    width: 100%;
+    width: 80%;
+  }
+}
+/* line 279, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav a.logo p {
+  color: white;
+  font-family: "GothamBold", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul .book-donovan-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .book-donovan-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .book-donovan-nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 291, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .book-donovan-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 295, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .social-nav-items {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 295, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .social-nav-items {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 295, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul .social-nav-items {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: #025371;
+    top: 55px;
+    margin: 0;
+    padding: 10px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: #025371;
+    top: 55px;
+    margin: 0;
+    padding: 10px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 286, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul {
+    position: absolute;
+    background: #025371;
+    top: 55px;
+    margin: 0;
+    padding: 10px 0 20px;
+    width: 100% !important;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul li {
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 307, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul a {
+  text-decoration: none;
+  color: #025371;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 313, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+}
+/* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav ul a:hover {
+  color: #E83A3B;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #E83A3B;
+    color: white;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #E83A3B;
+    color: white;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 324, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav ul a:hover {
+    background: #E83A3B;
+    color: white;
+  }
+}
+/* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+nav .main--toggle {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 337, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    -webkit-transform: translate3d(0, -1px, 0);
+            transform: translate3d(0, -1px, 0);
+  }
+  /* line 339, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    -webkit-transform: translate3d(0, 1px, 0);
+            transform: translate3d(0, 1px, 0);
+  }
+  /* line 341, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #025371;
+    display: block;
+    margin-top: 6px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 350, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 337, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    -webkit-transform: translate3d(0, -1px, 0);
+            transform: translate3d(0, -1px, 0);
+  }
+  /* line 339, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    -webkit-transform: translate3d(0, 1px, 0);
+            transform: translate3d(0, 1px, 0);
+  }
+  /* line 341, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #025371;
+    display: block;
+    margin-top: 6px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 350, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 329, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle {
+    float: right;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 12px 0 18px;
+  }
+  /* line 337, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:before {
+    -webkit-transform: translate3d(0, -1px, 0);
+            transform: translate3d(0, -1px, 0);
+  }
+  /* line 339, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:hover:after {
+    -webkit-transform: translate3d(0, 1px, 0);
+            transform: translate3d(0, 1px, 0);
+  }
+  /* line 341, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle:before, nav .main--toggle:after {
+    content: " ";
+    width: 32px;
+    height: 2px;
+    background: #025371;
+    display: block;
+    margin-top: 6px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 350, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle span {
+    width: 32px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 357, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 360, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 369, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+            transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 357, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 360, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 369, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+            transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 357, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active {
+    padding: 11px 0 17px;
+  }
+  /* line 360, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active span {
+    opacity: 0;
+    width: 28px;
+    height: 4px;
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+            transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  /* line 365, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:before {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+    width: 22px;
+    height: 2px;
+  }
+  /* line 369, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  nav .main--toggle.active:after {
+    -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+            transform: translate3d(0, -10px, 0) rotate(-45deg);
+    width: 22px;
+    height: 2px;
+  }
+}
+
+/* line 375, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header {
+  background-size: cover;
+  color: white;
+  height: calc(100vh - 90px);
+  position: relative;
+  margin-top: 90px;
+}
+/* line 383, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+  font-family: "GothamBold", sans-serif;
+}
+@media screen and (max-width: 499px) {
+  /* line 383, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header h2 {
+    margin-right: 10px;
+  }
+}
+/* line 393, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .background-image {
+  height: 100%;
+  background-size: cover;
+}
+@media screen and (max-width: 499px) {
+  /* line 393, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .background-image {
+    background-position: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 393, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .background-image {
+    background-position: center;
+  }
+}
+/* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav {
+  color: white;
+  background-color: #025371;
+}
+/* line 402, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav a p {
+  color: white;
+  font-weight: bold;
+}
+/* line 406, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav a:hover p {
+  color: #c3c3c3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 499px) {
+  /* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .lower-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .lower-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 398, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .lower-nav {
+    display: none;
+  }
+}
+/* line 411, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav--content {
+  max-width: 50%;
+  margin: auto auto;
+  text-transform: uppercase;
+  position: relative;
+}
+/* line 416, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav--content .red-half-circle {
+  background-color: #E83A3B;
+  min-height: 80px;
+  font-weight: bold;
+  width: 160px;
+  border-top: none;
+  border-radius: 300px 300px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  box-shadow: 0px -3px 11px 1px rgba(0, 0, 0, 0.4);
+}
+/* line 428, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .lower-nav--content .red-half-circle p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 1.3;
+  color: white;
+}
+/* line 435, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .arrow {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+/* line 440, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .arrow img {
+  width: 50px;
+}
+/* line 443, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .header--wrapper {
+  height: calc(100% - 56px);
+  max-width: 60%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 443, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .header--wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 443, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .header--wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+/* line 455, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+header .wrapper .header--text {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 455, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text {
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 455, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text {
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 464, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text h2 {
+    margin: 0 auto;
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 464, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  header .wrapper .header--text h2 {
+    margin: 0 auto;
+    font-size: 2.8rem;
+  }
+}
+
+/* line 470, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan {
+  padding: 0;
+  color: white;
+  position: relative;
+  height: calc(100vh - 90px);
+}
+@media screen and (max-width: 499px) {
+  /* line 470, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 470, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan {
+    height: 100%;
+  }
+}
+/* line 477, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .background-image {
+  height: 80vh;
+  background-size: cover;
+}
+/* line 480, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan h2 {
+  margin: 0;
+  font-family: "BodonItal", sans-serif;
+  font-size: 3rem;
+}
+/* line 484, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan p {
+  font-family: "BodonItal", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+}
+/* line 488, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/* line 490, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .top, section#donovan .bottom {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  text-align: center;
+}
+/* line 496, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .top {
+  top: 90px;
+}
+@media screen and (max-width: 499px) {
+  /* line 496, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top {
+    top: 5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 496, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top {
+    top: 5%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 502, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 502, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .top h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+/* line 506, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#donovan .bottom {
+  bottom: 50px;
+  width: 50%;
+}
+@media screen and (max-width: 499px) {
+  /* line 506, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom {
+    position: initial;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 80%;
+    margin: auto;
+  }
+  /* line 514, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom p {
+    color: #333;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 506, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom {
+    position: initial;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 80%;
+    margin: auto;
+  }
+  /* line 514, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#donovan .bottom p {
+    color: #333;
+  }
+}
+
+/* line 518, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #025371;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: "BodonBold", sans-serif;
+  padding-top: 20px;
+}
+/* line 526, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/* line 528, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex:nth-of-type(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+/* line 530, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex:nth-of-type(2n+1) {
+  background-color: #E83A3B;
+}
+/* line 532, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .wrapper--flex:nth-of-type(2n) {
+  background-color: #025371;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 526, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .wrapper--flex {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 526, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .wrapper--flex {
+    padding: 0;
+  }
+}
+/* line 536, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .col--two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+/* line 539, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .col--two p {
+  width: 70%;
+  margin: auto auto;
+  color: white;
+}
+/* line 543, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#athlete-story .col--two img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 547, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .col--two:nth-of-type(2n) {
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 547, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#athlete-story .col--two:nth-of-type(2n) {
+    min-height: 250px;
+  }
+}
+
+/* line 552, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .foundation-image, #bailey-inc .foundation-image {
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/* line 555, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation h2, #bailey-inc h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #025371;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: "BodonBold", sans-serif;
+}
+/* line 562, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation p, #bailey-inc p {
+  width: 55%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 562, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation p, #bailey-inc p {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 562, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation p, #bailey-inc p {
+    width: 85%;
+  }
+}
+/* line 569, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info, #bailey-inc .info {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 75%;
+  margin: 0 auto;
+}
+/* line 573, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info .col--two, #bailey-inc .info .col--two {
+  padding: 4rem;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 573, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation .info .col--two, #bailey-inc .info .col--two {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 573, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#foundation .info .col--two, #bailey-inc .info .col--two {
+    padding: 2rem;
+  }
+}
+/* line 577, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info h4, #bailey-inc .info h4 {
+  color: #025371;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 581, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#foundation .info li, #bailey-inc .info li {
+  margin-top: 20px;
+}
+
+/* line 585, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+#bailey-inc p {
+  padding-bottom: 0;
+  width: 95%;
+  font-size: 16px;
+  color: #777;
+}
+/* line 590, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+#bailey-inc li {
+  font-size: 16px;
+  color: #777;
+}
+/* line 593, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+#bailey-inc .info {
+  width: 95%;
+}
+
+/* line 599, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form {
+  background-color: #ddd;
+  padding: 6% 12%;
+  text-align: center;
+}
+/* line 603, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form h2 {
+  font-weight: bold;
+  font-family: "BodonBold", sans-serif;
+  padding: 0 50px;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 603, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form h2 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 603, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form h2 {
+    padding: 0;
+  }
+}
+/* line 609, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form h2, section#bailey-inc-form .bailey-inc-form h4 {
+  color: #025371;
+  text-transform: uppercase;
+}
+/* line 612, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-thank-you h2 {
+  color: #E83A3B;
+}
+/* line 614, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .more-info {
+  color: #E83A3B;
+}
+/* line 616, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form p, section#bailey-inc-form .bailey-inc-form h4 {
+  padding-bottom: 20px;
+}
+/* line 618, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 618, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form .bailey-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 618, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#bailey-inc-form .bailey-inc-form .bailey-form {
+    width: 100%;
+  }
+}
+/* line 624, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form input, section#bailey-inc-form .bailey-inc-form .bailey-form textarea {
+  width: 100%;
+  padding: 15px;
+  outline: 1px solid #999;
+  border: none;
+  margin-bottom: 25px;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 18px;
+}
+/* line 632, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form input[type=submit], section#bailey-inc-form .bailey-inc-form .bailey-form button.next {
+  outline: none;
+  width: 50%;
+  float: none;
+  padding: 15px;
+  font-size: 18px;
+}
+/* line 640, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form .required {
+  position: relative;
+}
+/* line 642, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .bailey-form .required:before {
+  content: "*";
+  color: #E83A3B;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 648, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .dots {
+  font-size: 40px;
+  margin-bottom: 18px;
+  color: #888;
+}
+/* line 652, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#bailey-inc-form .bailey-inc-form .active {
+  color: #025371;
+}
+
+/* line 656, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-description {
+  text-align: center;
+}
+/* line 658, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-description h2 {
+  font-weight: bold;
+  color: #025371;
+  font-family: "BodonItal", sans-serif;
+}
+/* line 662, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-description p {
+  font-family: "BodonItal", sans-serif;
+}
+/* line 664, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons {
+  padding: 0;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/* line 669, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons li {
+  list-style: none;
+  float: left;
+  margin-right: 15px;
+}
+/* line 674, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons li:hover i {
+  color: #025371;
+  background-color: white;
+  border: 2px solid #025371;
+}
+/* line 678, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social ul.social-icons li i {
+  color: white;
+  background-color: #025371;
+  border: 2px solid #025371;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 689, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 692, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element p {
+  color: white;
+}
+/* line 694, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:nth-of-type(2n+1) {
+  background-color: #E83A3B;
+}
+/* line 696, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:nth-of-type(4n+1) {
+  background-color: #025371;
+}
+/* line 698, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:nth-of-type(5) {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+/* line 700, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .social-element:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+@media screen and (max-width: 499px) {
+  /* line 705, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 707, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 709, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  /* line 711, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  /* line 713, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  /* line 715, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  /* line 717, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(7) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  /* line 719, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(8) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  /* line 721, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(9) {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  /* line 723, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(10) {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 705, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 707, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 709, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  /* line 711, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  /* line 713, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  /* line 715, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  /* line 717, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(7) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  /* line 719, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(8) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  /* line 721, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(9) {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  /* line 723, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element:nth-of-type(10) {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 725, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .social-element.col--four {
+    width: 50% !important;
+  }
+}
+/* line 728, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 736, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram:hover i {
+  visibility: visible;
+}
+/* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram i {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #025371;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .instagram i {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .instagram i {
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 738, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .instagram i {
+    visibility: visible;
+  }
+}
+/* line 754, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .instagram i:hover {
+  color: #E83A3B;
+}
+/* line 756, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .wrapper--flex.tweet-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 758, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  padding: 0 20px;
+  font-family: "DINNextLT", "Arial", sans-serif;
+  height: 80%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 16px;
+}
+/* line 773, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet:hover i {
+  visibility: visible;
+}
+/* line 777, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet .each-tweet a {
+  display: block;
+}
+/* line 779, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a i {
+  color: #025371;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet a i {
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet a i {
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 784, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet a i {
+    visibility: visible;
+  }
+}
+/* line 796, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a i:hover {
+  color: #E83A3B;
+}
+/* line 802, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet a {
+  color: white;
+  font-weight: bold;
+  word-break: break-all;
+  display: inline-block;
+}
+/* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 18px;
+  margin: auto;
+}
+/* line 812, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .tweet p a {
+  position: relative;
+}
+@media screen and (min-width: 960px) and (max-width: 1169px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 499px) {
+  /* line 807, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  section#social .tweet p {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+}
+/* line 830, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .square {
+  position: relative;
+  border: 2px solid black;
+}
+/* line 834, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+section#social .square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* line 842, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer {
+  background-image: url(/assets/footer-0019f8b292dbeef902f103d39eb73b0f644ce6e780204aa374bac7f6df36b562.png);
+  background-size: cover;
+  color: white;
+  padding: 150px 0;
+}
+/* line 847, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .wrapper--flex {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/* line 849, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .col--two {
+  padding: 0 7%;
+}
+/* line 851, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* line 854, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer p {
+  font-family: "DINNextLT", "Arial", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: white;
+}
+/* line 859, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer p a {
+  color: white;
+}
+/* line 861, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .contact {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media screen and (max-width: 499px) {
+  /* line 863, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .contact p, footer .contact .address-icon {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 863, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .contact p, footer .contact .address-icon {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 863, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .contact p, footer .contact .address-icon {
+    width: 100%;
+  }
+}
+/* line 866, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .fa-phone, footer .fa-envelope {
+  font-size: 3rem;
+  margin-right: 15px;
+}
+/* line 870, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .address p {
+  margin: 0;
+}
+@media screen and (max-width: 499px) {
+  /* line 869, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .address {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  /* line 869, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .address {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 869, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+  footer .address {
+    margin-top: 10px;
+  }
+}
+/* line 875, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .inquiry-thank-you {
+  color: #E83A3B;
+}
+/* line 878, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer #general-inquiry input, footer #general-inquiry textarea {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  margin-bottom: 20px;
+}
+/* line 883, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer #general-inquiry input[type=submit] {
+  width: 40%;
+  font-size: 1.5rem;
+}
+/* line 886, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons {
+  padding: 0;
+}
+/* line 888, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons li {
+  list-style: none;
+  float: left;
+  margin-right: 15px;
+}
+/* line 893, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons li:hover i {
+  color: white;
+  background-color: #025371;
+}
+/* line 896, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/home.sass */
+footer .social-icons li i {
+  color: #025371;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 49, /Users/trudymacnabb/Code/donovan/app/assets/stylesheets/application.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

@@ -21,6 +21,7 @@ class PagesController < ApplicationController
     rescue Errno::ECONNREFUSED
       logger.info "!!! Warning: Failed to deliver email, skipping"
     end
+    render :none 
   end
 
   def bailey_inc_inquiry
@@ -29,6 +30,7 @@ class PagesController < ApplicationController
     rescue Errno::ECONNREFUSED
       logger.info "!!! Warning: Failed to deliver email, skipping"
     end
+    render :none
   end
 
 

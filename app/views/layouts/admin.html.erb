@@ -18,6 +18,7 @@
         <div class="sidebar">
           <%= link_to 'Donovan Bailey', root_path %>
           <%= link_to 'Admin', admin_path, class: 'sidebar--header' %>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
           <a href="http://www.upatfive.ca/" target="_blank"><%= image_tag 'up-at-five-logo.png', class: 'uat-logo' %></a> 
         </div>
         <div class="admin--content">
