@@ -15,9 +15,12 @@
 				<li><a href="#bailey-inc">Bailey Inc.</a></li>
 				<li><a href="#footer">Contact</a></li>
 				<li><a class="book-donovan-nav" href="#bailey-inc-form">Book Donovan</a></li>
+				<li><a class="follow-donovan-nav" href="#social">Follow Donovan</a></li>
 				<li><a class="social-nav-items" href="https://twitter.com/donovanbailey" target="_blank"><i class="fa fa-twitter"></i></a></li>
-				<li><a class="social-nav-items" href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				<li><a class="social-nav-items" href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				<li class="large-screen"><a class="social-nav-items" href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	<!-- 			<li class="small-screen"><a href="fb://donovanbaileyofficial/"><i class="fa fa-facebook"></i></a></li> -->
+				<li class="large-screen"><a class="social-nav-items" href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		<!-- 		<li class="small-screen"><a class="social-nav-items" href="instagram://user?username=mrdonovanbailey"><i class="fa fa-instagram"></i></a></li> -->
 			</ul>
 		</div>		
 			<a href="#bailey-inc-form">
@@ -82,7 +85,12 @@
 
 		<h2>The Donovan Bailey Foundation</h2>
 		<p>Giving is a reflection of Donovan Baiey's values; that were instilled in him by his parents.  He has always believed that helping others improves your self-worth.  Getting involved with charitable organizations within your community and around the world untimately is good for everyone.</p>
-
+		<div class="foundation-logos wrapper wrapper--flex">
+			<a href="http://www.righttoplay.com/Pages/default.aspx" target="_blank"><%= image_tag 'Right-to-Play-Logo.png', class: 'foundation-logo' %></a>
+			<a href="http://www.bigbrothersbigsisters.ca/en/home/default.aspx" target="_blank"><%= image_tag 'logo-big-brothers-big-sisters.png', class: 'foundation-logo' %></a>
+			<a href="https://www.participaction.com/en-ca/home" target="_blank"><%= image_tag 'Participaction-Logo.jpg', class: 'foundation-logo' %></a>
+			<a href="http://www.ninemilesofsmiles.org/" target="_blank"><%= image_tag 'ninemiles.png', class: 'foundation-logo' %></a>
+		</div>
 
 	</div>
 </section>
@@ -127,7 +135,7 @@
 			<%= form_tag(bailey_inc_inquiry_path, method: 'post', multipart: true, remote: true, class: "bailey-form-fields") do %>
 				<div class="first">
 					<%= text_field_tag :name, nil, placeholder: 'Full Name', class:"required" %>
-					<%= text_field_tag :email, nil, placeholder: 'Email' , class:"required" %>
+					<%= text_field_tag :email, nil, placeholder: 'Email', class:"required" %>
 					<%= text_field_tag :number , nil, placeholder: 'Phone Number', class:"required" %>
 					<%= text_field_tag :company, nil, placeholder: 'Company/Agency' %>
 				</div>
@@ -155,8 +163,10 @@
 		<p>Get the most up to date posts from Donovan and be sure to follow along on social media.</p>
 		<ul class="social-icons">
 			<li><a href="https://twitter.com/donovanbailey"><i class="fa fa-twitter" target="_blank"></i></a></li>
-			<li><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			<li class="large-screen"><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li class="small-screen"><a href="fb://donovanbaileyofficial/" class="small-screen"><i class="fa fa-facebook"></i></a></li>
+			<li class="large-screen"><a class="social-nav-items" href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			<li class="small-screen"><a class="social-nav-items" href="instagram://user?username=mrdonovanbailey"><i class="fa fa-instagram"></i></a></li>
 			<li><a href="https://www.youtube.com/user/donovanbaileyinc" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
 		</ul>
 	</div>
@@ -207,8 +217,10 @@
 			<h3>Follow donovan on Social Media</h3>
 			<ul class="social-icons">
 				<li><a href="https://twitter.com/donovanbailey"><i class="fa fa-twitter" target="_blank"></i></a></li>
-				<li><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook" target="_blank"></i></a></li>
-				<li><a href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram" target="_blank"></i></a></li>
+				<li class="large-screen"><a href="https://www.facebook.com/donovanbaileyofficial/" target="_blank"><i class="fa fa-facebook" target="_blank"></i></a></li>
+				<li class="small-screen"><a href="fb://donovanbaileyofficial/" class="small-screen"><i class="fa fa-facebook"></i></a></li>
+				<li class="large-screen"><a class="social-nav-items" href="https://www.instagram.com/mrdonovanbailey/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				<li class="small-screen"><a class="social-nav-items" href="instagram://user?username=mrdonovanbailey"><i class="fa fa-instagram" target="_blank"></i></a></li>
 				<li><a href="https://www.youtube.com/user/donovanbaileyinc" target="_blank"><i class="fa fa-youtube-play" target="_blank"></i></a></li>
 			</ul>
 		</div>
@@ -216,9 +228,9 @@
 			<h3>General Inquiry Form</h3>
 			<h4 class="inquiry-thank-you">Thank you, your inquiry has been submitted</h4>
 			<%= form_tag(general_inquiry_path, method: 'post', multipart: true, remote:true, id: 'general-inquiry' ) do %>
-				<%= text_field_tag :name, nil, :placeholder => "Full Name" %>
-				<%= text_field_tag :email, nil, :placeholder => "Email" %>
-				<%= text_field_tag :number, nil, :placeholder => "Phone Number" %>
+				<%= text_field_tag :name, nil, :placeholder => "Full Name", required: true %>
+				<%= text_field_tag :email, nil, :placeholder => "Email", required: true, type: 'email' %>
+				<%= text_field_tag :number, nil, :placeholder => "Phone Number", required: true, type: 'telephone' %>
 				<%= text_area_tag :comment, nil, :placeholder => "Your Question/Comment" %>
 				<%= submit_tag 'submit' %>
 			<% end %>
@@ -261,7 +273,7 @@
 		e.preventDefault()
 		$('.inquiry-thank-you').show()
 		$('html, body').animate({
-			scrollTop: $('.inquiry-thank-you').offset().top
+			scrollTop: $('.inquiry-thank-you').offset().top - 90
 		}, 500)
 	})
 
@@ -291,7 +303,6 @@
 			$('.required').each(function(index, field){
 				if(field.value == ""){
 					form_ok = false
-					console.log(field.value)
 				}
 			})
 			if(form_ok){
@@ -346,14 +357,14 @@
 	}
 
 
-	var theWidth = $(window).width();
-	$(window).smartresize(function(){
-		if($(this).width() != theWidth){
-			windowSize = $(window).innerWidth()
-			mainMenuSmall()
-			theWidth = $(this).width()
-		}
-	});
+	// var theWidth = $(window).width();
+	// $(window).smartresize(function(){
+	// 	if($(this).width() != theWidth){
+	// 		windowSize = $(window).innerWidth()
+	// 		mainMenuSmall()
+	// 		theWidth = $(this).width()
+	// 	}
+	// });
 
 	mainMenuSmall()
 </script>

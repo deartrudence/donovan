@@ -200,6 +200,14 @@ h2.hl
 // NAV
 // .logo-main
 // 	:width 240px
+
+.small-screen 
+	:display none
+	+display-for(sm xs md)
+		:display block
+.large-screen
+	+display-for(sm xs md)
+		:display none
 nav 
 	:background white
 	:padding 12px 0
@@ -290,7 +298,7 @@ nav
 		:padding 0
 		:margin 0
 		:justify-content flex-end
-		.book-donovan-nav
+		.book-donovan-nav, .follow-donovan-nav
 			:display none
 			+display-for(md sm xs)
 				:display block
@@ -551,7 +559,7 @@ section#athlete-story
 
 
 section#foundation, #bailey-inc
-	.foundation-image 
+	img 
 		:height 65vh
 		:object-fit cover
 	h2 
@@ -583,6 +591,13 @@ section#foundation, #bailey-inc
 		li 
 			// :list-style none
 			:margin-top 20px
+	.foundation-logos
+		:justify-content space-around
+		:align-items center
+		:padding 0 30px
+		img.foundation-logo
+			:width 150px
+			:height 100%
 #bailey-inc 
 	p 
 		:padding-bottom 0
