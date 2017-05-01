@@ -18,7 +18,7 @@ class PagesController < ApplicationController
 
   def general_inquiry
     begin
-      GeneralInquiryMailer.new_general_inquiry(params[:name], params[:email], params[:number], params[:comment]).deliver!
+      GeneralInquiryMailer.new_general_inquiry(params[:name], params[:email], params[:number], params[:comment]).deliver_later!
     rescue Errno::ECONNREFUSED
       logger.info "!!! Warning: Failed to deliver email, skipping"
     end
@@ -27,7 +27,7 @@ class PagesController < ApplicationController
 
   def bailey_inc_inquiry
     begin
-      GeneralInquiryMailer.bailey_inc_inquiry(params[:name], params[:email], params[:number], params[:company], params[:location], params[:date], params[:info]).deliver!
+      GeneralInquiryMailer.bailey_inc_inquiry(params[:name], params[:email], params[:number], params[:company], params[:location], params[:date], params[:info]).deliver_later!
     rescue Errno::ECONNREFUSED
       logger.info "!!! Warning: Failed to deliver email, skipping"
     end

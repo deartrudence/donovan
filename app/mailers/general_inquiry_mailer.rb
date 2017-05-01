@@ -11,7 +11,7 @@ class GeneralInquiryMailer < ApplicationMailer
     @phone = phone
     @comment = comment
 
-    mail to: "trudy.macnabb@gmail.com"
+    mail to: "office@donovanbailey.com"
   end
 
   def bailey_inc_inquiry(name, email, phone, company, location, date, info)
@@ -23,7 +23,7 @@ class GeneralInquiryMailer < ApplicationMailer
     @date = date
     @info = info
 
-    mail to: "trudy.macnabb@gmail.com"
+    mail to: "office@donovanbailey.com"
   end
 
 end
