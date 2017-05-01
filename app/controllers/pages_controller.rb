@@ -14,6 +14,7 @@ class PagesController < ApplicationController
     end
     @tweet = Tweet.new
   end
+    
 
   def general_inquiry
     begin
